@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>繪本森活・四季共讀 | Vol. 011</title>
+    <style>
+        /* 基礎設定與字型匯入 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap');
+
+        body {
+            background-color: #f4f6f5; /* 清新淡雅的灰綠背景 */
+            color: #4a4a4a;
+            font-family: 'Noto Sans TC', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            border-radius: 12px;
+        }
+
+        /* 刊頭設計 */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e1e8e5;
+        }
+
+        .main-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #5c7a72; /* 沉穩的森林綠 */
+            letter-spacing: 2px;
+            margin: 0 0 15px 0;
+        }
+
+        .sub-title {
+            font-size: 20px;
+            color: #a38c7b; /* 質感的燕麥褐 */
+            margin: 0 0 20px 0;
+            font-weight: 500;
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: #888;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #f9faf9;
+            padding: 10px;
+            border-radius: 20px;
+            display: inline-flex;
+        }
+
+        /* 標題與段落 */
+        h3.section-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 24px;
+            color: #5c7a72;
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            border-left: 4px solid #a38c7b;
+            padding-left: 15px;
+        }
+
+        h4.article-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            margin: 0 0 15px 0;
+        }
+
+        p {
+            margin: 0 0 18px 0;
+            text-align: justify;
+        }
+
+        /* 特殊區塊設計 */
+        .note-box {
+            background-color: #fdfaf6;
+            border: 1px solid #f0e6d8;
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            position: relative;
+        }
+
+        .note-box::before {
+            content: "💡";
+            position: absolute;
+            top: 20px;
+            left: -15px;
+            font-size: 24px;
+        }
+
+        /* 繪本卡片設計 */
+        .book-card {
+            background-color: #fff;
+            border: 1px solid #e1e8e5;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .book-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(92, 122, 114, 0.08);
+        }
+
+        .book-header {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #e1e8e5;
+        }
+
+        .book-name {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 20px;
+            color: #5c7a72;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+        }
+
+        .book-author {
+            color: #777;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* 列表樣式 */
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #5c7a72;
+        }
+
+        /* 響應式微調 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+                margin: 0;
+                border-radius: 0;
+            }
+            .meta-info {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+                border-radius: 8px;
+            }
+            .note-box::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 class="main-title">繪本森活・四季共讀</h1>
+        <h2 class="sub-title">Vol. 011：那不是自私，是還沒學會「我們」</h2>
+        <div class="meta-info">
+            <span>發刊日：2026年3月2日（雨水）</span>
+            <span>主編：園長 蕭淑芬</span>
+        </div>
+    </header>
+
+    <section>
+        <h3 class="section-title">園長的書桌</h3>
+        <h4 class="article-title">【從「我」變成「我們」，需要練習】</h4>
+        <p>親愛的老師、爸爸媽媽們，大家好：</p>
+        <p>開學第二週，孩子們的眼淚擦乾了，但新的挑戰來了。在幼兒園裡，常聽到這幾個字高頻率出現：「這是我的！」、「不要！」、「走開！」</p>
+        <p>有家長擔心地問：「我的孩子是不是很霸道？很自私？」請大家放心，這不是品格問題，這是發展問題。</p>
+        <p>對於幼兒來說，世界是以自己為圓心旋轉的。要他們把手裡心愛的玩具交給別人，那種感覺就像是要割掉一塊肉一樣痛。學會分享，違反了生物本能，所以才需要「教育」。</p>
+        <p>本週，我們不談大道理。我們用繪本裡的動物朋友們當示範，讓孩子看看：原來把手鬆開，可以遇到比玩具更好玩的—朋友。</p>
+    </section>
+
+    <section>
+        <h3 class="section-title">溯源・知繪本</h3>
+        <h4 class="article-title">【全世界都是我的：皮亞傑的「自我中心」】</h4>
+        <p>為什麼孩子這麼難溝通？兒童心理學大師皮亞傑(Jean Piaget) 提出了一個核心概念—<strong>「自我中心」(Egocentrism)</strong>。</p>
+        <p>這不是貶義詞，而是描述幼兒的一種認知狀態：「他們真的以為，別人看到的、感覺到的，都跟自己一樣。」</p>
+        <ul>
+            <li><strong>我看不到你，你就看不到我：</strong>所以孩子玩躲貓貓只會把頭藏起來。</li>
+            <li><strong>我喜歡這個，你一定也喜歡：</strong>所以他們搶玩具不是為了惹你生氣，是他真心覺得「我現在就要玩」。</li>
+        </ul>
+        
+        <div class="note-box">
+            <strong>園長筆記：</strong>理解這一點，我們就不會對孩子的「搶奪」行為感到憤怒。繪本的作用，就是幫助孩子跨越這道牆。透過故事，孩子能看見：「咦？原來那隻青蛙被搶玩具時，心裡是會難過的。」這就是「同理心」的萌芽。
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">歲時・繪本曆</h3>
+        <p><strong>【本週節氣：雨水】</strong><br>剛過了「雨水」節氣。雨水落下，匯聚成河流；就像孩子從個體，匯聚成群體。這時候最適合讀一本關於「爭吵與和解」的書。</p>
+
+        <div class="book-card">
+            <div class="book-header">
+                <h4 class="book-name">《這是我的！》</h4>
+                <p class="book-author">作、繪者：李歐・李奧尼</p>
+            </div>
+            <p><strong>推薦理由：</strong>李奧尼大師最擅長用拼貼畫來講故事。書中有三隻青蛙，他們整天吵架：「水是我的！空氣是我的！蟲子是我的！」直到一場大雨來了，洪水把他們困在同一塊石頭上。他們必須擠在一起取暖，才發現「我們」在一起的感覺，比「獨占」好多了。</p>
+            <p><strong>共讀亮點：</strong>這本書沒有說教，而是用「災難（大雨）」創造了合作的契機。讀完後問問孩子：「為什麼最後他們覺得『這真是一個快樂的下午』？」引導孩子思考分享帶來的快樂。</p>
+        </div>
+
+        <div class="book-card">
+            <div class="book-header">
+                <h4 class="book-name">《和我玩好嗎?》</h4>
+                <p class="book-author">作、繪者：瑪麗．荷．艾斯</p>
+            </div>
+            <p><strong>推薦理由：</strong>這是一本關於「等待」與「尊重」的雋永之作。瑪麗．荷．艾斯捨棄了繁複的背景，用淡雅的色調與極簡的線條，精準捕捉孩子渴望連結卻又拙於表達的純真。故事輕輕道出一個深刻的哲理：真正的親密無法透過強求或追逐而來；當我們學會安靜下來，尊重對方的步調，美好自然會悄悄靠近。這不僅是與自然共處的智慧，更是人際關係中溫柔的隱喻。</p>
+            <p><strong>共讀亮點：</strong></p>
+            <ul>
+                <li><strong>動靜之間的對比：</strong>引導孩子觀察畫面細節，動物們在小女孩「抓取」時驚慌逃跑的樣子，對比小女孩「靜坐」時，動物們探頭探腦、主動圍繞過來的神情，感受「急躁」與「安靜」帶來的不同結果。</li>
+                <li><strong>情緒的共鳴：</strong>故事最後，當小鹿舔了小女孩的臉頰，那是全書最高潮的喜悅。可以邀請孩子模仿小女孩最後屏氣凝神、不敢亂動的樣子，一起體驗那種被大自然接納的感動。</li>
+                <li><strong>延伸思考：</strong>讀完後可以和孩子討論：「為什麼一開始小動物都跑掉了？」、「如果想交朋友，是用力抓緊比較好，還是輕輕邀請比較好呢？」將故事連結到日常的人際互動中。</li>
+            </ul>
+        </div>
+
+        <div class="book-card">
+            <div class="book-header">
+                <h4 class="book-name">《我可以進來嗎?》</h4>
+                <p class="book-author">作者：埃琳娜．羅西尼 | 繪者：艾琳．佩納齊</p>
+            </div>
+            <p><strong>推薦理由：</strong>打破大人與小孩界線的暖心之作。故事從孩子最愛的「蓋堡壘」遊戲出發，用紙箱、床單搭建出專屬的小天地。最動人的是，當大人們在外面敲門問「我可以進來嗎？」時，孩子們大方地說「YES！」，讓原本看似狹窄的空間因為分享而變得無限寬廣。它提醒我們：只要保有童心，誰都可以隨時加入這場想像力的派對，找回純真的快樂。</p>
+            <p><strong>共讀亮點：</strong></p>
+            <ul>
+                <li><strong>生活物品大變身：</strong>仔細觀察畫面，孩子們運用了家裡的哪些東西（如曬衣夾、雨傘、大棉被）來搭建祕密基地？這能激發孩子觀察生活用品的創意用法。</li>
+                <li><strong>驚喜的拉頁設計：</strong>隨著越來越多的大人加入，書頁透過特殊的「拉頁」設計，視覺上瞬間展開，完美呈現了「心越寬，空間越大」的概念，給孩子大大的驚喜。</li>
+                <li><strong>大人表情的變化：</strong>引導孩子比較大人們在進入堡壘前（嚴肅、忙碌、看手錶）與進入後（放鬆、大笑、玩耍）的表情差異，討論「一起玩」帶來的快樂魔力。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">實踐・玩教學</h3>
+        <h4 class="article-title">【社交通關密語】我們不要只叫孩子「去玩」，我們要教他們「怎麼玩」。</h4>
+        
+        <div class="note-box" style="border-left-color: #5c7a72;">
+            <p><strong>🎪 給家長的玩法：客廳裡的預演</strong></p>
+            <ul>
+                <li><strong>情境劇：</strong>在家裡，爸爸假裝是「正在玩積木的小朋友」，孩子是「想加入的人」。</li>
+                <li><strong>NG 示範：</strong>讓孩子試著直接搶走積木。爸爸演出生氣的樣子：「我不跟你玩了！」</li>
+                <li><strong>OK 示範：</strong>教孩子說出通關密語—「我可以跟你一起玩嗎？」 或 「我們可以輪流嗎？」</li>
+                <li><strong>練習：</strong>多練習幾次，讓這句話變成身體的直覺反應。</li>
+            </ul>
+        </div>
+
+        <div class="note-box" style="border-left-color: #5c7a72;">
+            <p><strong>⏳ 給老師的教室靈感：輪流沙漏</strong></p>
+            <ul>
+                <li><strong>工具：</strong>準備幾個 3 分鐘或 5 分鐘的小沙漏。</li>
+                <li><strong>規則：</strong>當兩個孩子搶一個玩具時，不用老師當法官判誰贏。拿出沙漏：「現在是 A 的時間，沙子漏完之後，就換 B 的時間。」</li>
+                <li><strong>效果：</strong>沙漏是客觀的時間，孩子比較願意聽從「沙漏」的指揮，而不是聽老師的命令。這能有效減少紛爭。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">走讀・探新意</h3>
+        <h4 class="article-title">【真實的社交戰場：公園沙坑】</h4>
+        <p>本週推薦的閱讀空間是—「公園的沙坑」。這裡沒有老師管秩序，是觀察孩子社交能力的最佳實驗室。</p>
+        <ul>
+            <li><strong>觀察任務：</strong>帶孩子去沙坑，但不要急著幫他找伴。</li>
+            <li><strong>看：</strong>觀察孩子是怎麼加入別人的？是默默站在旁邊看？還是拿著鏟子衝過去？</li>
+            <li><strong>引導：</strong>如果孩子卻步了，遞給他一個鏟子，鼓勵他說出那句密語：「我可以跟你們一起挖洞嗎？」</li>
+        </ul>
+        <p><em>*沙坑裡的合作（例如一起蓋城堡），是高階的社交遊戲。</em></p>
+    </section>
+
+    <section>
+        <h3 class="section-title">園長的繪本練功坊</h3>
+        
+        <div style="margin-bottom: 25px;">
+            <h4 class="article-title">🔖 【童里繪本洋行】</h4>
+            <p>專注於推廣藝術性與哲思性外語繪本的部落格，由「童里繪本洋行」經營。他們將每一本繪本視為一場紙上的迷你畫展，透過獨到的選書眼光與深度的插畫賞析，帶領讀者看見圖像背後的廣闊世界。這裡不只介紹書，更是在日常中發掘美感與觀點的靈感溫室。</p>
+        </div>
+
+        <div>
+            <h4 class="article-title">🔖 【繪本原力 x 花火閱讀】</h4>
+            <p>專寫給大人看的繪本深度指南，作者透過「繪本考古」挖掘插畫史上的經典巨匠與冷門傑作。從維多利亞時期的復古畫風到當代的圖像小說，這裡不只帶你看圖，更引領你讀懂隱藏在畫筆背後的藝術靈魂與歷史故事。</p>
+        </div>
+    </section>
+<div style="text-align: center; margin: 40px 0;">
+    <a href="index.html" style="text-decoration: none; color: #5c7a72; font-weight: bold; border: 1px solid #5c7a72; padding: 8px 20px; border-radius: 20px;">← 返回所有期數</a>
+</div>
+</div>
+
+</body>
+</html>
