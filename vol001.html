@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>繪本森活・四季共讀 | Vol. 001 創刊號：在黑夜最長的一天，點亮閱讀的光</title>
+    <style>
+        /* 基礎設定與字型匯入 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap');
+
+        body {
+            background-color: #fcfbf9; /* 帶有微暖燭光感的米白背景 */
+            color: #4a4a4a;
+            font-family: 'Noto Sans TC', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            border-top: 6px solid #2c3e50; /* 初夜靛藍點綴 */
+        }
+
+        /* 刊頭設計 */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #f0eee9;
+        }
+
+        .main-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #2c3e50; /* 初夜靛藍 */
+            letter-spacing: 2px;
+            margin: 0 0 15px 0;
+        }
+
+        .sub-title {
+            font-size: 20px;
+            color: #d68943; /* 暖燭橘金 */
+            margin: 0 0 20px 0;
+            font-weight: 500;
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: #888;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #f9f8f5;
+            padding: 10px 25px;
+            border-radius: 20px;
+            display: inline-flex;
+            border: 1px solid #f0eee9;
+        }
+
+        /* 標題與段落 */
+        h3.section-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 24px;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            border-left: 4px solid #d68943;
+            padding-left: 15px;
+        }
+
+        h4.article-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            margin: 0 0 15px 0;
+            background-color: #f4f6f7;
+            padding: 8px 15px;
+            border-radius: 4px;
+            display: inline-block;
+            border-bottom: 2px solid #e1e5e8;
+        }
+
+        p {
+            margin: 0 0 18px 0;
+            text-align: justify;
+        }
+
+        /* 特殊區塊設計 */
+        .note-box {
+            background-color: #fdfaf6;
+            border: 1px solid #f5eadc;
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            position: relative;
+        }
+
+        .note-box::before {
+            content: "💡";
+            position: absolute;
+            top: 20px;
+            left: -15px;
+            font-size: 24px;
+        }
+
+        /* 繪本/資源卡片設計 */
+        .card {
+            background-color: #fff;
+            border: 1px solid #f0eee9;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(44, 62, 80, 0.08);
+        }
+
+        .card-header {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #f0eee9;
+        }
+
+        .card-name {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 20px;
+            color: #2c3e50;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+        }
+
+        .card-meta {
+            color: #777;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* 列表樣式 */
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #2c3e50;
+        }
+
+        a {
+            color: #d68943;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 圖片佔位符置中 */
+        .image-placeholder {
+            text-align: center;
+            margin: 25px 0;
+            font-style: italic;
+            color: #888;
+        }
+
+        /* 響應式微調 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+                margin: 0;
+                border-radius: 0;
+                border-top-width: 4px;
+            }
+            .meta-info {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+                border-radius: 8px;
+            }
+            .note-box::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 class="main-title">繪本森活・四季共讀</h1>
+        <h2 class="sub-title">Vol. 001 創刊號：在黑夜最長的一天，點亮閱讀的光</h2>
+        <div class="meta-info">
+            <span>發刊日：2025年12月22日（冬至）</span>
+            <span>主編：園長 蕭淑芬</span>
+        </div>
+    </header>
+
+    <section>
+        <h3 class="section-title">園長的書桌</h3>
+        <h4 class="article-title">【冬至一陽生，閱讀正當時】</h4>
+        <p>親愛的老師、爸爸媽媽們，大家好：</p>
+        <p>冬至，在傳統習俗裡，是「大過年」的日子；在天文學上，這是北半球黑夜最長、白晝最短的一天。</p>
+        <p>古人說「冬至一陽生」，意思是過了冬至夜晚，陽光就會一點一點地回來，春天也就不遠了。這讓我聯想到教育—孩子的成長，不也是從懞懂的黑夜中，等待智慧之光慢慢升起的過程嗎？</p>
+        <p>在這特別的日子，《繪本森活》電子報正式創刊了。</p>
+        <p>身為一個愛書的園長，我常覺得繪本不只是哄睡的工具，它是人類歷史上最溫柔的發明。同時，也受到了《繪本多一點》的「皮老闆」和「雯子老師」所啟發，接下來的一年（52週），我想邀請您跟著時間的腳步，用繪本感受24節氣的流轉，探訪繪本大師的初心，並在繁忙的生活中，留下一扇「閱讀的窗」。</p>
+        <p>今晚，吃完熱呼呼的湯圓後，讓我們一起點亮床頭燈，翻開這份屬於我們的閱讀旅程。</p>
+    </section>
+
+    <section>
+        <h3 class="section-title">溯源・知繪本</h3>
+        <h4 class="article-title">【看見世界的第一扇窗：柯美紐斯與《世界圖繪》】</h4>
+        <p>您有沒有想過，為什麼童書一定要有圖畫？</p>
+        <p>時間回到 1658 年，當時的學校教室裡只有枯燥的文字與背誦。一位捷克的教育家—<strong>約翰・阿摩司・柯美紐斯 (John Amos Comenius)</strong>，他堅信「感官是學習的起點」。如果孩子沒看過「雲」，光讀「雲」這個字是沒有意義的。於是他創作了人類歷史上第一本專為兒童設計的有圖百科全書——《世界圖繪》(Orbis Sensualium Pictus)。</p>
+        
+        <div class="image-placeholder">
+            
+        </div>
+
+        <div class="note-box" style="border-left-color: #2c3e50;">
+            <p><strong>📝 園長筆記：</strong>在這本書裡，他左邊畫圖，右邊寫字。他畫出了天文地理，也畫出了人類靈魂。這本書告訴我們：「圖像」不是文字的附屬品，而是孩子理解世界的「第一語言」。</p>
+            <p style="margin-bottom: 0;"><strong>🤔 給大人的思考：</strong>當您下次陪孩子讀繪本，孩子指著圖片問「這是什麼？」時，請別急著唸文字。請記得柯美紐斯的智慧—讓孩子先用眼睛「讀」圖，那正是他大腦正在建構世界的時刻。</p>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">歲時・繪本曆</h3>
+        <p><strong>【本週節氣：冬至】</strong><br>冬至，是陰極之至，也是陽氣始生。在這個節氣，最適合讀一本溫暖、對比強烈的書。</p>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-name">《下雪天》(The Snowy Day)</h4>
+                <p class="card-meta">作者：艾茲拉・傑克・季茲 (Ezra Jack Keats)</p>
+            </div>
+            <p><strong>推薦理由：</strong>這本書雖然講的是雪，卻充滿了「紅與白」的視覺張力。書中的小男孩彼得穿著鮮紅色的雪衣，在一片慘白的雪地裡探險。 這正呼應了冬至的意象—在寒冷蕭瑟的白色（冬）中，看見那一點點溫暖躍動的紅色（陽氣/生命力）。</p>
+            <p><strong>生活儀式：</strong>除了吃湯圓，試著和孩子玩一個小遊戲：「找找家裡的紅色」。就像彼得的紅雪衣一樣，找出家裡溫暖的顏色，可能是紅色的抱枕、紅色的蘋果，感受色彩帶來的溫度。</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-name">《紅點點》(Red Dots)</h4>
+                <p class="card-meta">作者：林廉恩</p>
+            </div>
+            <p><strong>推薦理由：</strong>金鼎獎及波隆那首獎作家林廉恩，以獨特的複合媒材拼貼藝術打造暖心繪本《紅點點》。本書將抽象的自信與成就感具象化，透過小貓因挫折掉落點點的故事，溫柔傳遞「失敗也是種養分」的核心理念。引導孩子接納不完美、學習在低潮中休息並重新出發的勇氣之書，更是提醒家長透過靜靜陪伴，守護孩子在一次次挫折中長出屬於自己的樣子。這就像是一場陣雨，雖然暫時打落了花瓣，卻也為土壤帶來水分，讓生命能開出更堅韌、更美麗的花朵。</p>
+        </div>
+
+        <div class="note-box" style="background-color: #f4f6f7; border-color: #e1e5e8;">
+            <h4 style="color: #2c3e50; margin-top: 0;">✅ 【本週共讀打卡】</h4>
+            <p style="font-size: 15px; margin-bottom: 10px;">更多的冬至相關繪本，歡迎找機會和孩子分享共讀，這週你完成了幾項呢？</p>
+            <ul style="margin-bottom: 0;">
+                <li>和孩子一起吃湯圓，並聊聊湯圓是什麼形狀（圓形）。</li>
+                <li>找出了一本關於「冬天」、「雪」或「紅色」的繪本。</li>
+                <li>試著用手電筒和孩子玩了光影遊戲。</li>
+                <li>尋找生活中的紅色事物，觀察節慶生活中的色彩，聊聊感受。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">實踐・玩中學</h3>
+        <h4 class="article-title">【光與影的被窩探險】</h4>
+        <p>呼應冬至「最長黑夜」與柯美紐斯「視覺啟蒙」的主題，今晚我們不開大燈，來玩光影！</p>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+            <div style="flex: 1; min-width: 250px; background: #fdfaf6; padding: 20px; border-radius: 8px; border: 1px solid #f5eadc;">
+                <h4 style="color: #d68943; margin-top: 0;">⛺ 給家長的玩法：被窩電影院</h4>
+                <div class="image-placeholder" style="margin: 10px 0;">
+                    
+                </div>
+                <ul style="margin-top: 10px; padding-left: 15px;">
+                    <li><strong>準備：</strong>手電筒一支、孩子喜歡的繪本一本。</li>
+                    <li><strong>行動：</strong>關上房間大燈，躲進棉被裡（或在黑暗的房間）。</li>
+                    <li><strong>引導：</strong>用手電筒像聚光燈一樣，只照亮繪本上的「某一個角色」或「某個小角落」。</li>
+                    <li><strong>提問：</strong>「你看！光圈抓到了誰？」、「猜猜看，黑暗裡躲著大野狼嗎？」</li>
+                    <li><strong>效果：</strong>透過聚焦光線，能大幅提升孩子對圖像細節的觀察力。</li>
+                </ul>
+            </div>
+            
+            <div style="flex: 1; min-width: 250px; background: #f4f6f7; padding: 20px; border-radius: 8px; border: 1px solid #e1e5e8;">
+                <h4 style="color: #2c3e50; margin-top: 0;">🏫 給老師的教學點子：影子猜猜看</h4>
+                <ul style="margin-top: 10px; padding-left: 15px;">
+                    <li>利用冬日的斜射陽光或投影機，讓孩子觀察「影子」的變化。</li>
+                    <li>讀完《下雪天》後，讓孩子模仿彼得，用腳在地上拖曳出長長的線條，或者用粉筆把彼此的影子畫下來。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">走讀・探新意</h3>
+        <div class="card" style="margin-bottom: 20px;">
+            <h4 class="card-name" style="font-size: 18px; border-bottom: none; margin-bottom: 10px;">🏠 打造家裡的「黃金一角」</h4>
+            <p>創刊號我們不往外跑，而是回到家中。 柯美紐斯曾說：「學校應當是快樂的工場。」家庭也是。</p>
+            <p><strong>本週任務：</strong>檢視家裡的書櫃。 很多孩子的書是「書背朝外」塞在櫃子裡的，孩子看不到圖，就不會想拿。</p>
+            <p style="margin-bottom: 0;">請試著空出一個層架，或準備一個小籃子，挑出 3 本關於冬天或紅色的書，將封面朝外 (Face-out) 擺放。就像百貨公司的櫥窗一樣，用封面「召喚」孩子的手。</p>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">園長的繪本練功坊</h3>
+        
+        <div style="margin-bottom: 25px;">
+            <h4 class="article-title" style="border-bottom: none; color: #d68943;">🔖 【繪本多一點】</h4>
+            <p style="margin-bottom: 10px;"><a href="https://www.picturebookmore.com/" target="_blank">點此前往網站 ➜</a></p>
+            <p>這是一個結合 Podcast 節目與部落格的繪本推廣平台，由「皮老闆」和「雯子老師」經營。網站不只分享繪本故事，更強調「繪本還能多做什麼」，提供繪本的深度解析、共讀技巧、延伸活動（如結合 SDGs 議題）以及譯作分享。適合對繪本教學、選書有興趣的家長、老師或繪本愛好者，探索繪本在閱讀之外的更多可能。</p>
+        </div>
+
+        <div style="margin-bottom: 25px;">
+            <h4 class="article-title" style="border-bottom: none; color: #d68943;">🔖 【OPENBOOK繪本大師】</h4>
+            <p style="margin-bottom: 10px;"><a href="https://www.openbook.org.tw/MastersofPictureBooks" target="_blank">點此前往網站 ➜</a></p>
+            <p>知名閱讀媒體「Openbook 閱讀誌」中的一個人氣專欄，主要由童書作家莊世瑩執筆。該專欄按月份介紹當月出生的世界級繪本大師（如艾瑞·卡爾、蘇斯博士等），深入淺出地講述這些創作者的生平故事、藝術風格及其對童書界的貢獻，帶領讀者認識經典繪本背後的創作靈魂。</p>
+        </div>
+
+        <div>
+            <h4 class="article-title" style="border-bottom: none; color: #d68943;">🔖 【嬰幼兒閱讀推廣計畫】</h4>
+            <p style="margin-bottom: 10px;"><a href="https://www.pccr.tw/" target="_blank">點此前往網站 ➜</a></p>
+            <p>由教育部指導、國立臺灣圖書館主辦的官方計畫網站，致力於推動 0-5 歲嬰幼兒的早期素養。網站提供歷年評選出的「適合嬰幼兒閱讀之優良圖書」書單、全台圖書館的閱讀禮袋（閱讀起步走 Bookstart）發放資訊，以及親子共讀的技巧與講座資源，是新手爸媽尋找共讀資源的重要入口。</p>
+        </div>
+    </section>
+    
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="index.html" style="text-decoration: none; color: #2c3e50; font-weight: bold; border: 1px solid #2c3e50; padding: 8px 20px; border-radius: 20px;">← 返回所有期數</a>
+    </div>
+</div>
+
+</body>
+</html>

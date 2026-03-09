@@ -18,7 +18,7 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1000px; /* 稍微加寬以容納更多卡片 */
             margin: 0 auto;
         }
 
@@ -26,11 +26,13 @@
         header {
             text-align: center;
             margin-bottom: 60px;
+            padding-bottom: 30px;
+            border-bottom: 2px dashed #d1d8d5;
         }
 
         .site-title {
             font-family: 'Noto Serif TC', serif;
-            font-size: 36px;
+            font-size: 38px;
             font-weight: 700;
             color: #5c7a72; /* 沉穩森林綠 */
             letter-spacing: 4px;
@@ -39,7 +41,7 @@
 
         .site-subtitle {
             font-size: 16px;
-            color: #888;
+            color: #777;
             font-weight: 400;
             letter-spacing: 1px;
         }
@@ -47,7 +49,7 @@
         /* 期數卡片網格佈局 */
         .issue-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 30px;
         }
 
@@ -62,25 +64,36 @@
             transition: all 0.3s ease;
             display: flex;
             flex-direction: column;
-            border-top: 5px solid transparent;
+            border-top: 6px solid transparent;
+            position: relative;
+            overflow: hidden;
         }
 
-        /* 賦予各期不同的頂部點綴色 */
-        .issue-card.vol-009 { border-top-color: #c06c64; } /* 珊瑚紅 - 呼應過年 */
-        .issue-card.vol-010 { border-top-color: #e6b981; } /* 晨光黃 - 呼應開學 */
-        .issue-card.vol-011 { border-top-color: #a38c7b; } /* 燕麥褐 - 呼應同理心 */
+        /* 賦予各期不同的頂部點綴色 (依據每期主題色) */
+        .issue-card.vol-011 { border-top-color: #a38c7b; } /* 燕麥褐 - 同理心 */
+        .issue-card.vol-010 { border-top-color: #e6b981; } /* 晨光黃 - 開學 */
+        .issue-card.vol-009 { border-top-color: #c06c64; } /* 珊瑚紅 - 圍爐 */
+        .issue-card.vol-008 { border-top-color: #c46b5d; } /* 柿子紅 - 食育 */
+        .issue-card.vol-007 { border-top-color: #7a9c78; } /* 初春嫩綠 - 立春 */
+        .issue-card.vol-006 { border-top-color: #5b7b8c; } /* 冬雪灰藍 - 寒假 */
+        .issue-card.vol-005 { border-top-color: #c05a50; } /* 胭脂紅 - 年獸 */
+        .issue-card.vol-004 { border-top-color: #6fa39b; } /* 晨霧藍 - 大掃除 */
+        .issue-card.vol-003 { border-top-color: #5c6b73; } /* 霜雪灰藍 - 小寒等待 */
+        .issue-card.vol-002 { border-top-color: #4a6274; } /* 暮光藍 - 跨年 */
+        .issue-card.vol-001 { border-top-color: #2c3e50; } /* 初夜靛藍 - 冬至創刊 */
 
         .issue-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 12px 25px rgba(92, 122, 114, 0.1);
+            box-shadow: 0 12px 25px rgba(92, 122, 114, 0.12);
         }
 
         .issue-vol {
             font-size: 14px;
             font-weight: 700;
-            color: #a38c7b;
-            margin-bottom: 10px;
+            color: #888;
+            margin-bottom: 12px;
             font-family: 'Noto Serif TC', serif;
+            letter-spacing: 1px;
         }
 
         .issue-title {
@@ -88,7 +101,7 @@
             font-weight: 700;
             color: #333;
             margin: 0 0 15px 0;
-            line-height: 1.4;
+            line-height: 1.5;
         }
 
         .issue-date {
@@ -103,10 +116,21 @@
         footer {
             text-align: center;
             margin-top: 80px;
-            font-size: 13px;
-            color: #aaa;
+            font-size: 14px;
+            color: #999;
+            padding-top: 30px;
+            border-top: 1px solid #d1d8d5;
         }
 
+        /* 響應式 */
+        @media (max-width: 600px) {
+            .site-title {
+                font-size: 28px;
+            }
+            .issue-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -119,26 +143,74 @@
 
     <div class="issue-grid">
         <a href="vol011.html" class="issue-card vol-011">
-            <div class="issue-vol">Vol. 011</div>
+            <div class="issue-vol" style="color: #a38c7b;">Vol. 011</div>
             <h2 class="issue-title">那不是自私，是還沒學會「我們」</h2>
             <div class="issue-date">發刊日：2026年3月2日（雨水）</div>
         </a>
 
         <a href="vol010.html" class="issue-card vol-010">
-            <div class="issue-vol">Vol. 010</div>
+            <div class="issue-vol" style="color: #e6b981;">Vol. 010</div>
             <h2 class="issue-title">開學不哭？給孩子（和爸媽）的勇氣魔法</h2>
             <div class="issue-date">發刊日：2026年2月23日（開學日）</div>
         </a>
 
         <a href="vol009.html" class="issue-card vol-009">
-            <div class="issue-vol">Vol. 009</div>
+            <div class="issue-vol" style="color: #c06c64;">Vol. 009</div>
             <h2 class="issue-title">除夕圍爐夜：最好的年味，是全家人聚在一起</h2>
-            <div class="issue-date">發刊日：2026年2月16日（除夕特輯）</div>
+            <div class="issue-date">發刊日：2026年2月16日（除夕・過年特輯）</div>
+        </a>
+
+        <a href="vol008.html" class="issue-card vol-008">
+            <div class="issue-vol" style="color: #c46b5d;">Vol. 008</div>
+            <h2 class="issue-title">舌尖上的家鄉，用味道記住愛</h2>
+            <div class="issue-date">發刊日：2026年2月9日（團圓特刊）</div>
+        </a>
+
+        <a href="vol007.html" class="issue-card vol-007">
+            <div class="issue-vol" style="color: #7a9c78;">Vol. 007</div>
+            <h2 class="issue-title">孩子的名字叫種子，幼兒園的名字叫花園</h2>
+            <div class="issue-date">發刊日：2026年2月2日（立春）</div>
+        </a>
+
+        <a href="vol006.html" class="issue-card vol-006">
+            <div class="issue-vol" style="color: #5b7b8c;">Vol. 006</div>
+            <h2 class="issue-title">神獸出籠不用怕！寒假防無聊的閱讀提案</h2>
+            <div class="issue-date">發刊日：2026年1月26日（寒假開始）</div>
+        </a>
+
+        <a href="vol005.html" class="issue-card vol-005">
+            <div class="issue-vol" style="color: #c05a50;">Vol. 005</div>
+            <h2 class="issue-title">為什麼我們要講可怕的故事？紅色的力量</h2>
+            <div class="issue-date">發刊日：2026年1月19日</div>
+        </a>
+
+        <a href="vol004.html" class="issue-card vol-004">
+            <div class="issue-vol" style="color: #6fa39b;">Vol. 004</div>
+            <h2 class="issue-title">在丟棄之前，先學會說謝謝</h2>
+            <div class="issue-date">發刊日：2026年1月12日（歲末大掃除特刊）</div>
+        </a>
+
+        <a href="vol003.html" class="issue-card vol-003">
+            <div class="issue-vol" style="color: #5c6b73;">Vol. 003</div>
+            <h2 class="issue-title">學會等待，是冬天的必修課</h2>
+            <div class="issue-date">發刊日：2026年1月5日（小寒）</div>
+        </a>
+
+        <a href="vol002.html" class="issue-card vol-002">
+            <div class="issue-vol" style="color: #4a6274;">Vol. 002</div>
+            <h2 class="issue-title">翻過這一頁，就是明年</h2>
+            <div class="issue-date">發刊日：2025年12月29日（跨年特刊）</div>
+        </a>
+
+        <a href="vol001.html" class="issue-card vol-001">
+            <div class="issue-vol" style="color: #2c3e50;">Vol. 001</div>
+            <h2 class="issue-title">創刊號：在黑夜最長的一天，點亮閱讀的光</h2>
+            <div class="issue-date">發刊日：2025年12月22日（冬至）</div>
         </a>
     </div>
 
     <footer>
-        &copy; 2026 繪本森活・四季共讀 | 主編：園長 蕭淑芬
+        &copy; 2025-2026 繪本森活・四季共讀 | 主編：園長 蕭淑芬
     </footer>
 </div>
 

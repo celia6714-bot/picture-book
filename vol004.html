@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>繪本森活・四季共讀 | Vol. 004 在丟棄之前，先學會說謝謝</title>
+    <style>
+        /* 基礎設定與字型匯入 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap');
+
+        body {
+            background-color: #f4f7f8; /* 帶有空氣感的極淺灰藍背景 */
+            color: #4a4a4a;
+            font-family: 'Noto Sans TC', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            border-radius: 12px;
+            border-top: 6px solid #6fa39b; /* 晨霧藍點綴 */
+        }
+
+        /* 刊頭設計 */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eef2f3;
+        }
+
+        .main-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #6fa39b; /* 晨霧藍 */
+            letter-spacing: 2px;
+            margin: 0 0 15px 0;
+        }
+
+        .sub-title {
+            font-size: 20px;
+            color: #ba9b76; /* 暖藤棕 */
+            margin: 0 0 20px 0;
+            font-weight: 500;
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: #888;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #fbfcfc;
+            padding: 10px 25px;
+            border-radius: 20px;
+            display: inline-flex;
+            border: 1px solid #eef2f3;
+        }
+
+        /* 標題與段落 */
+        h3.section-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 24px;
+            color: #6fa39b;
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            border-left: 4px solid #ba9b76;
+            padding-left: 15px;
+        }
+
+        h4.article-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            margin: 0 0 15px 0;
+            background-color: #f4f7f8;
+            padding: 8px 15px;
+            border-radius: 4px;
+            display: inline-block;
+            border-bottom: 2px solid #eef2f3;
+        }
+
+        p {
+            margin: 0 0 18px 0;
+            text-align: justify;
+        }
+
+        /* 特殊區塊設計 */
+        .note-box {
+            background-color: #f9fbfb;
+            border: 1px solid #e1ebea;
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            position: relative;
+        }
+
+        .note-box::before {
+            content: "💡";
+            position: absolute;
+            top: 20px;
+            left: -15px;
+            font-size: 24px;
+        }
+
+        /* 繪本/資源卡片設計 */
+        .card {
+            background-color: #fff;
+            border: 1px solid #eef2f3;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(111, 163, 155, 0.08);
+        }
+
+        .card-header {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #eef2f3;
+        }
+
+        .card-name {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 20px;
+            color: #6fa39b;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+        }
+
+        .card-meta {
+            color: #777;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* 列表樣式 */
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #6fa39b;
+        }
+
+        /* 圖片容器 */
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* 響應式微調 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+                margin: 0;
+                border-radius: 0;
+                border-top-width: 4px;
+            }
+            .meta-info {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+                border-radius: 8px;
+            }
+            .note-box::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 class="main-title">繪本森活・四季共讀</h1>
+        <h2 class="sub-title">Vol. 004：在丟棄之前，先學會說謝謝</h2>
+        <div class="meta-info">
+            <span>發刊日：2026年1月12日（歲末大掃除特刊）</span>
+            <span>主編：園長 蕭淑芬</span>
+        </div>
+    </header>
+
+    <section>
+        <h3 class="section-title">園長的書桌</h3>
+        <h4 class="article-title">【大掃除，是一場心靈的儀式】</h4>
+        <p>親愛的老師、爸爸媽媽們，大家好：</p>
+        <p>下週就是二十四節氣中的最後一個—「大寒」，這也意味著農曆新年真的要來了。平時在幼兒園，我們會帶著孩子擦拭積木、整理學習區和教室環境。我常看到有趣的畫面：孩子拿著壞掉的玩具車或布偶，捨不得丟進回收桶，嘴裡還嘟囔著：「可是它會痛...」</p>
+        <p>大人常覺得這是「垃圾」，但在孩子眼裡，那是「夥伴」。</p>
+        <p>這週的電子報，我們不談怎麼把家裡掃乾淨（那是家事達人的工作），我們要談的是「斷捨離」背後的兒童心理學。</p>
+        <p>如何引導孩子面對舊物？如何讓大掃除不變成親子戰爭，而變成一場充滿感恩的「道別儀式」？讓我們用繪本來練習這件重要的事。</p>
+    </section>
+
+    <section>
+        <h3 class="section-title">溯源・知繪本</h3>
+        <h4 class="article-title">【為什麼掃把會怕癢？從「泛靈觀」看繪本的擬人魔法】</h4>
+        <p>為什麼繪本裡的主角常是動物或物品，而不是人類？ 這必須結合心理學與兒童文學理論來看：</p>
+        <ul>
+            <li><strong>皮亞傑的「泛靈論」：</strong>學齡前幼兒認為「萬物皆有靈」。在他們眼裡，被冷落的舊玩具會傷心，壞掉的椅子會痛。這不是迷信，而是孩子理解世界的一種溫柔方式。</li>
+            <li><strong>文學上的「情感投射」：</strong>繪本大師們深知這一點，因此大量運用「擬人化」技巧。繪本中的物品，其實是孩子內心的鏡子。</li>
+        </ul>
+        <div class="image-container">
+            
+        </div>
+        <p>當繪本畫出「一個被遺忘在角落哭泣的玩偶」，其實是在幫孩子說出「我怕被遺棄」的恐懼。當孩子讀到「掃把努力工作後很開心」，他們將這份情感投射到自己身上，學習到了責任感。</p>
+        
+        <div class="note-box">
+            <strong>📝 園長筆記：</strong>理解了這個創作原理，您就會明白為什麼大掃除對孩子這麼難。對大人來說是「清理垃圾」，對孩子來說卻是「切斷情感連結」。所以，最好的斷捨離不是趁他不在時偷偷丟掉（這會破壞安全感），而是運用繪本的儀式感—帶著孩子對舊玩具說：「謝謝你陪我長大，現在你要去休息了。」讓這段「關係」能夠好好善終。
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">歲時・繪本曆</h3>
+        <p><strong>【本週主題：惜物與轉化】</strong><br>在汰舊換新的季節，我們推薦一本關於「把舊東西變新魔法」的經典繪本。</p>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-name">《爺爺一定有辦法》</h4>
+                <p class="card-meta">作者：菲比・吉爾曼 (Phoebe Gilman)</p>
+            </div>
+            <p><strong>推薦理由：</strong>這是一個改編自猶太民間故事的繪本。約瑟的毯子舊了、髒了，媽媽說該丟了，但爺爺總有辦法把它變成外套、背心、領帶...最後變成一顆鈕扣。</p>
+            <p><strong>共讀亮點：</strong></p>
+            <ul>
+                <li><strong>找找看：</strong>書的下方還有老鼠一家的平行故事，牠們撿了爺爺剪下的碎布去佈置家裡。這是絕佳的觀察力訓練。</li>
+                <li><strong>對話思考：</strong>「東西變小了、不見了，真的就是消失了嗎？」最後約瑟把鈕扣變成了「故事」。這告訴孩子：物品會消失，但記憶會永遠留下來。</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-name">《今天不想掃地板》</h4>
+                <p class="card-meta">作者：王佩心 (一口)</p>
+            </div>
+            <p><strong>推薦理由：</strong>作者發揮獨特的幽默感，將日復一日工作的掃地機器人「灰灰」擬人化，象徵著在規律生活中默默付出的每一個人。這不只是一個關於逃跑的故事，更是一部溫柔的哲理書，提醒我們：即使身陷瑣碎的日常，我們依然有權利按下暫停鍵，帶著工作的辛勞換來的門票，去擁抱屬於自己的那片大海。另一本《今天不想吹頭髮》也很推薦喔！</p>
+            <p><strong>共讀亮點：</strong>請引導孩子觀察灰灰從「狹窄客廳」切換到「遼闊海洋」的視覺跨度，體驗視野打開的感動。這不僅是一場紙上冒險，更是開啟親子「夢想對話」的絕佳契機：問問孩子如果能放個假，最想去哪裡冒險？並藉此機會，練習感謝身邊那些不起眼、卻讓生活順利運轉的人事物。</p>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">實踐・玩教學</h3>
+        <h4 class="article-title">【玩具道別大會】</h4>
+        <p>今年大掃除，請不要趁孩子睡著時偷偷丟玩具。試試看這樣做：</p>
+        
+        <div class="image-container">
+            
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+            <div style="flex: 1; min-width: 250px; background: #fbfcfc; padding: 20px; border-radius: 8px; border: 1px solid #eef2f3;">
+                <h4 style="color: #6fa39b; margin-top: 0;">🏠 給家長的玩法：謝謝儀式</h4>
+                <ul style="margin-top: 10px; padding-left: 15px;">
+                    <li><strong>分類：</strong>準備三個箱子，貼上標籤：「留下來的」、「送給別人的（捐贈）」、「說再見的（回收/丟棄）」。</li>
+                    <li><strong>擬人化對話：</strong>當孩子要把壞掉的玩具放進「說再見箱」時，請孩子握著玩具說一句話：「謝謝你陪我長大，你要去玩具星球休息了。」</li>
+                    <li><strong>轉化：</strong>透過說「謝謝」，讓愧疚感轉化為感恩。這符合孩子的泛靈心理，也能讓分離變得溫柔。</li>
+                </ul>
+            </div>
+            
+            <div style="flex: 1; min-width: 250px; background: #faf8f5; padding: 20px; border-radius: 8px; border: 1px solid #f2ece4;">
+                <h4 style="color: #ba9b76; margin-top: 0;">🏫 給老師的教室靈感：修補匠工作坊</h4>
+                <ul style="margin-top: 10px; padding-left: 15px;">
+                    <li>蒐集班上掉頁的書、缺角的拼圖盒子。</li>
+                    <li>準備膠帶、膠水，帶著孩子一起當「修補醫生」。</li>
+                    <li>告訴孩子：「因為我們很喜歡這本書，所以要幫它貼上 OK 繃。」這是最直接的惜物教育。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">走讀・探新意</h3>
+        <div class="card" style="margin-bottom: 20px;">
+            <h4 class="card-name" style="font-size: 18px; border-bottom: none; margin-bottom: 10px;">📚 書的旅行：二手書店</h4>
+            <div class="image-container">
+                
+            </div>
+            <p>趁著大掃除清出的舊繪本，除了送人，還可以帶孩子去「二手書店」（如：茉莉二手書店、胡思書店...等）。</p>
+            <ul style="margin-bottom: 0;">
+                <li><strong>概念傳遞：</strong>告訴孩子：「這本書你看過了好多次，它想去認識新的小朋友了。我們帶它去『轉運站』搭車吧！」</li>
+                <li><strong>循環經濟：</strong>讓孩子親自把書交給店員，如果換到了幾枚銅板，可以讓孩子投進存錢筒。這能讓孩子理解，物品只要被愛惜，生命就可以延續。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">園長的繪本練功坊</h3>
+        
+        <div style="margin-bottom: 25px;">
+            <h4 class="article-title" style="border-bottom: none; color: #ba9b76;">🔖 【美與藝術-從故事談起】</h4>
+            <p>宋珮老師透過一個個動人的繪本和藝術作品，引領我們看見藝術背後的人性與情感。原來，美不是標準答案，而是對生命的深刻共鳴。這是一堂讓人聽得懂、感受得到的藝術啟發課，推薦給想在日常生活中重新發現「美」的你。</p>
+        </div>
+
+        <div>
+            <h4 class="article-title" style="border-bottom: none; color: #ba9b76;">🔖 【高雄市圖-繪本回憶錄】</h4>
+            <p>你還記得人生中讀的第一本繪本嗎？隨著時光流逝，那些塵封的故事或許模糊，但當時的感動卻埋下了種子。高市圖特別企劃「繪本回憶錄」，邀請 6 位高雄在地繪本作家，帶領大家搭乘時光機，回到他們創作旅程的最初究竟是什麼？</p>
+        </div>
+    </section>
+    
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="index.html" style="text-decoration: none; color: #6fa39b; font-weight: bold; border: 1px solid #6fa39b; padding: 8px 20px; border-radius: 20px;">← 返回所有期數</a>
+    </div>
+</div>
+
+</body>
+</html>

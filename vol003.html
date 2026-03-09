@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>繪本森活・四季共讀 | Vol. 003 學會等待，是冬天的必修課</title>
+    <style>
+        /* 基礎設定與字型匯入 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap');
+
+        body {
+            background-color: #f5f7f8; /* 帶有冬日冷空氣感的極淺灰藍 */
+            color: #4a4a4a;
+            font-family: 'Noto Sans TC', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            border-radius: 12px;
+            border-top: 6px solid #5c6b73; /* 霜雪灰藍點綴 */
+        }
+
+        /* 刊頭設計 */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eef1f2;
+        }
+
+        .main-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #5c6b73; /* 霜雪灰藍 */
+            letter-spacing: 2px;
+            margin: 0 0 15px 0;
+        }
+
+        .sub-title {
+            font-size: 20px;
+            color: #a39171; /* 休眠籽褐 */
+            margin: 0 0 20px 0;
+            font-weight: 500;
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: #888;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #fcfcfd;
+            padding: 10px 25px;
+            border-radius: 20px;
+            display: inline-flex;
+            border: 1px solid #eef1f2;
+        }
+
+        /* 標題與段落 */
+        h3.section-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 24px;
+            color: #5c6b73;
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            border-left: 4px solid #a39171;
+            padding-left: 15px;
+        }
+
+        h4.article-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            margin: 0 0 15px 0;
+            background-color: #f5f7f8;
+            padding: 8px 15px;
+            border-radius: 4px;
+            display: inline-block;
+            border-bottom: 2px solid #eef1f2;
+        }
+
+        p {
+            margin: 0 0 18px 0;
+            text-align: justify;
+        }
+
+        /* 特殊區塊設計 */
+        .note-box {
+            background-color: #fcfdfe;
+            border: 1px solid #e6ebed;
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            position: relative;
+        }
+
+        .note-box::before {
+            content: "💡";
+            position: absolute;
+            top: 20px;
+            left: -15px;
+            font-size: 24px;
+        }
+
+        /* 繪本/資源卡片設計 */
+        .card {
+            background-color: #fff;
+            border: 1px solid #eef1f2;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(92, 107, 115, 0.08);
+        }
+
+        .card-header {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #eef1f2;
+        }
+
+        .card-name {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 20px;
+            color: #5c6b73;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+        }
+
+        .card-meta {
+            color: #777;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* 列表樣式 */
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #5c6b73;
+        }
+
+        /* 圖片佔位符置中 */
+        .image-placeholder {
+            text-align: center;
+            margin: 25px 0;
+            font-style: italic;
+            color: #888;
+        }
+
+        /* 響應式微調 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+                margin: 0;
+                border-radius: 0;
+                border-top-width: 4px;
+            }
+            .meta-info {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+                border-radius: 8px;
+            }
+            .note-box::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 class="main-title">繪本森活・四季共讀</h1>
+        <h2 class="sub-title">Vol. 003：學會等待，是冬天的必修課</h2>
+        <div class="meta-info">
+            <span>發刊日：2026年1月5日（小寒）</span>
+            <span>主編：園長 蕭淑芬</span>
+        </div>
+    </header>
+
+    <section>
+        <h3 class="section-title">園長的書桌</h3>
+        <h4 class="article-title">【種子在土裡，並不是在睡覺】</h4>
+        <p>親愛的老師、爸爸媽媽們，大家好：</p>
+        <p>新年快樂！大家還適應 2026 這個數字嗎？ 這週在幼兒園，我發現孩子們有點興奮躍動。剛拿完聖誕禮物，也跨完年，他們急著問：「什麼時候過新年？什麼時候領紅包？」</p>
+        <p>在這個講求「快速」的時代，孩子習慣手指一滑就有動畫，按鈕一按就有燈光。「等待」，變成了一件困難和需要學習的事。</p>
+        <p>但大自然不是這樣的。這週就是「小寒」節氣了，天氣會變得更冷。樹葉掉光了，蟲子不見了，看起來好像什麼都沒發生。但我們知道，泥土底下的種子正在努力扎根，它們在「等待」春雷。</p>
+        <div class="image-placeholder">
+            
+        </div>
+        <p>本週，我想和各位聊聊關於「慢下來」的繪本智慧。讓我們告訴孩子：等待不是浪費時間，等待本身，就是一種生長。</p>
+    </section>
+
+    <section>
+        <h3 class="section-title">溯源・知繪本</h3>
+        <h4 class="article-title">【留白的藝術：繪本裡的「間」(Ma)】</h4>
+        <p>您有沒有發現，有些繪本的文字很少，畫面卻很滿；有些則是畫面上留了大片的空白？這週想跟各位介紹一個美學概念—「留白」（在日本美學中稱為 「間」(Ma)）。 這在東方繪畫中很重要，在繪本理論中更是關鍵。</p>
+        <div class="image-placeholder">
+            
+        </div>
+        <ul>
+            <li><strong>無聲勝有聲：</strong> 像繪本大師 赤羽末吉（《馬頭琴》繪者）就非常擅長運用留白。他在畫雪地時，往往保留大片的紙張原色，只畫地平線。</li>
+            <li><strong>給想像力停車位：</strong> 這些空白不是因為畫家偷懶，而是特意留給讀者的「時間」。</li>
+        </ul>
+        
+        <div class="note-box">
+            <strong>📝 園長筆記：</strong>當您和孩子讀到畫面很空、話很少的頁面時，請不要急著翻頁。 在那片空白中停個 5 秒鐘，那是給孩子大腦「深呼吸」的空間。讓孩子去感受那個安靜，這就是閱讀節奏感的練習。
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">歲時・繪本曆</h3>
+        <p><strong>【本週節氣：小寒】</strong><br>小寒，是冬天最寒冷日子的開始。 這時候最適合讀一本「慢吞吞」的書，讓心靜下來。</p>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-name">《等待》(Waiting)</h4>
+                <p class="card-meta">作者：凱文・漢克斯 (Kevin Henkes)</p>
+            </div>
+            <p><strong>推薦理由：</strong>這是一本完美的「小寒之書」。書中有五個玩具（貓頭鷹、小豬、小熊...）站在窗台上。 他們在做什麼？他們在等待。 貓頭鷹等月亮，小豬等雨，小狗等雪。</p>
+            <p><strong>共讀亮點：</strong>這本書沒有驚心動魄的冒險，只有窗外四季的變化。 讀這本書時，請用最緩慢的語速。問問孩子：「你看，小豬等到了雨，他開心嗎？」這本書教會孩子：快樂不一定要「得到」什麼，有時候「期待」的過程本身就很美好。</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-name">《我等不及了！》</h4>
+                <p class="card-meta">作者：吉竹伸介</p>
+            </div>
+            <p><strong>推薦理由：</strong>吉竹伸介以幽默視角解構「急躁」背後的心情，療癒現代人匆忙焦慮的內心，讓人釋懷並找到最舒適的生活節奏。</p>
+            <p><strong>共讀亮點：</strong>透過故事讓親子互相理解彼此的「時間觀」差異，在「快一點」與「等一下」之間，練習包容並磨合出最適合的相處步調。</p>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">實踐・玩教學</h3>
+        <h4 class="article-title">【看得見的耐心】</h4>
+        <p>等待很抽象，我們用「種植」和「烹飪」讓它具象化。</p>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+            <div style="flex: 1; min-width: 250px; background: #fdfdfd; padding: 20px; border-radius: 8px; border: 1px solid #eef1f2;">
+                <h4 style="color: #5c6b73; margin-top: 0;">🌱 給家長的玩法：水仙花的倒數計時</h4>
+                <div class="image-placeholder" style="margin: 10px 0;">
+                    
+                </div>
+                <ul style="margin-top: 10px; padding-left: 15px;">
+                    <li><strong>時機：</strong>剛好距離農曆過年還有幾週。</li>
+                    <li><strong>行動：</strong>去花市買一顆水仙花球莖（或風信子）。</li>
+                    <li><strong>儀式：</strong>找一個漂亮的淺盤，放上石頭和水。告訴孩子：「我們現在開始養它，每天換水，等到它開花的時候，就是過年囉！」</li>
+                    <li><strong>觀察：</strong>每天看著綠芽長高一點點，這就是「具象化的等待」。</li>
+                </ul>
+            </div>
+            
+            <div style="flex: 1; min-width: 250px; background: #faf8f5; padding: 20px; border-radius: 8px; border: 1px solid #ede8e1;">
+                <h4 style="color: #a39171; margin-top: 0;">🏫 給老師的教室靈感：慢郎中遊戲</h4>
+                <ul style="margin-top: 10px; padding-left: 15px;">
+                    <li><strong>活動：</strong>123 木頭人的進階版—「慢動作大賽」。</li>
+                    <li><strong>規則：</strong>請孩子從教室這頭走到那頭，但越慢越好，動作要像電影慢動作重播一樣。誰最慢到達終點，誰就是贏家。</li>
+                    <li><strong>目的：</strong>訓練幼兒的肌肉控制力與衝動控制，這是大腦前額葉發展的重要指標。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">走讀・探新意</h3>
+        <div class="card" style="margin-bottom: 20px;">
+            <h4 class="card-name" style="font-size: 18px; border-bottom: none; margin-bottom: 10px;">🏛️ 時間停止的空間：博物館</h4>
+            <p>冬天戶外太冷，不想去公園吹風嗎？這週推薦您帶孩子去「臺灣博物館」。</p>
+            <p>遊樂園是讓人興奮尖叫的地方，但博物館是讓人「凝視」的地方。</p>
+            <div class="image-placeholder">
+                
+            </div>
+            <ul style="margin-bottom: 0;">
+                <li><strong>任務：</strong>不要試圖看完所有展品。</li>
+                <li><strong>挑戰：</strong>選定「一件」作品（可能是一個恐龍化石，或一幅畫），和孩子坐在前面的椅子上，靜靜看 3 分鐘。</li>
+                <li><strong>對話：</strong>「你看到了什麼剛才沒發現的小細節？」</li>
+            </ul>
+            <p style="margin-top: 10px; color: #a39171; font-weight: bold;">在這個充滿「歷史感」的空間裡，孩子能感受到時間的沉澱。</p>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">園長的繪本練功坊</h3>
+        
+        <div style="margin-bottom: 25px;">
+            <h4 class="article-title" style="border-bottom: none; color: #a39171;">🔖 【摸得到的靈感：Suzy Lee談創作與人生】</h4>
+            <ul style="list-style-type: none; padding-left: 0; color: #777; font-size: 14px; margin-bottom: 10px;">
+                <li>作者：蘇西．李</li>
+                <li>譯者：施沛</li>
+                <li>出版社：大塊文化出版股份有限公司</li>
+            </ul>
+            <p>2022年國際安徒生大獎得主 Suzy Lee 首部自述散文集，毫無保留地揭露創作背後的掙扎與喜悅，是所有創作者與繪本愛好者不容錯過的靈感寶庫。書中細膩描繪了在藝術家與母親角色間的平衡與拉扯，真摯的文字能引起所有身兼多職者的深刻共鳴，並從中獲得溫暖的慰藉。</p>
+        </div>
+
+        <div>
+            <h4 class="article-title" style="border-bottom: none; color: #a39171;">🔖 【SUZY LEE的創作祕密：跨越現實和幻想的邊界三部曲】</h4>
+            <ul style="list-style-type: none; padding-left: 0; color: #777; font-size: 14px; margin-bottom: 10px;">
+                <li>作者：蘇西．李</li>
+                <li>譯者：柯倩華</li>
+                <li>出版社：大塊文化出版股份有限公司</li>
+            </ul>
+            <p>蘇西．李（Suzy Lee）親自撰寫的創作論述，深入剖析她著名的「邊界三部曲」—《鏡子》、《海浪》、《影子》。獨家解密其經典作品「邊界三部曲」的創作心法，剖析如何利用書籍中線打破虛實界線，是繪本迷必讀的紙上大師課。透過深度解析書中的設計巧思，帶領讀者看見形式與內容的完美結合，重新定義圖畫書的藝術可能。</p>
+        </div>
+    </section>
+    
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="index.html" style="text-decoration: none; color: #5c6b73; font-weight: bold; border: 1px solid #5c6b73; padding: 8px 20px; border-radius: 20px;">← 返回所有期數</a>
+    </div>
+</div>
+
+</body>
+</html>

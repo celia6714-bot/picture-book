@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>繪本森活・四季共讀 | Vol. 005 紅色的力量</title>
+    <style>
+        /* 基礎設定與字型匯入 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap');
+
+        body {
+            background-color: #fcfbfa; /* 帶有微溫度的米白背景 */
+            color: #4a4a4a;
+            font-family: 'Noto Sans TC', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            border-radius: 12px;
+            border-top: 6px solid #c05a50; /* 素雅的胭脂紅點綴 */
+        }
+
+        /* 刊頭設計 */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #f2ece9;
+        }
+
+        .main-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #c05a50; /* 胭脂紅 */
+            letter-spacing: 2px;
+            margin: 0 0 15px 0;
+        }
+
+        .sub-title {
+            font-size: 20px;
+            color: #6b635e; /* 暖炭灰 */
+            margin: 0 0 20px 0;
+            font-weight: 500;
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: #888;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: #fffaf9;
+            padding: 10px 25px;
+            border-radius: 20px;
+            display: inline-flex;
+            border: 1px solid #f2ece9;
+        }
+
+        /* 標題與段落 */
+        h3.section-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 24px;
+            color: #c05a50;
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            border-left: 4px solid #6b635e;
+            padding-left: 15px;
+        }
+
+        h4.article-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            margin: 0 0 15px 0;
+            background-color: #fffaf9;
+            padding: 8px 15px;
+            border-radius: 4px;
+            display: inline-block;
+            border-bottom: 2px solid #f2ece9;
+        }
+
+        p {
+            margin: 0 0 18px 0;
+            text-align: justify;
+        }
+
+        /* 特殊區塊設計 */
+        .note-box {
+            background-color: #fff5f5;
+            border: 1px solid #fae3e3;
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            position: relative;
+        }
+
+        .note-box::before {
+            content: "💡";
+            position: absolute;
+            top: 20px;
+            left: -15px;
+            font-size: 24px;
+        }
+
+        /* 繪本/資源卡片設計 */
+        .card {
+            background-color: #fff;
+            border: 1px solid #f2ece9;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(192, 90, 80, 0.08);
+        }
+
+        .card-header {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #f2ece9;
+        }
+
+        .card-name {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 20px;
+            color: #c05a50;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+        }
+
+        .card-meta {
+            color: #777;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* 列表樣式 */
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #c05a50;
+        }
+
+        /* 響應式微調 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+                margin: 0;
+                border-radius: 0;
+                border-top-width: 4px;
+            }
+            .meta-info {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+                border-radius: 8px;
+            }
+            .note-box::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 class="main-title">繪本森活・四季共讀</h1>
+        <h2 class="sub-title">Vol. 005：為什麼我們要講可怕的故事？紅色的力量</h2>
+        <div class="meta-info">
+            <span>發刊日：2026年1月19日</span>
+            <span>主編：園長 蕭淑芬</span>
+        </div>
+    </header>
+
+    <section>
+        <h3 class="section-title">園長的書桌</h3>
+        <h4 class="article-title">【紅色，是冬天裡的一把火】</h4>
+        <p>親愛的老師、爸爸媽媽們，大家好：</p>
+        <p>最近走進幼兒園，您有沒有發現教室變紅了？孩子們開始剪窗花、做鞭炮。在色彩心理學中，紅色代表著熱情、能量，但同時也是「警示」。</p>
+        <p>而在我們的文化裡，紅色更有著一層溫柔的含義—「保護」。傳說中，我們用紅紙趕走了年獸；現實中，我們用紅包傳遞祝福。</p>
+        <p>這週我想聊聊「年獸」。有家長問我：「園長，跟孩子講年獸吃人的故事，會不會把他們嚇哭？」其實，孩子對「怪獸」的感覺是很微妙的。他們害怕，但又渴望戰勝它。這正是民間故事存在千年的原因：它教會弱小的孩子，只要運用智慧（和一點點魔法），就能戰勝強大的恐懼。</p>
+        <p>本週，讓我們披上紅色的披風，一起去書裡抓怪獸！</p>
+    </section>
+
+    <section>
+        <h3 class="section-title">溯源・知繪本</h3>
+        <h4 class="article-title">【怪獸的心理學：為什麼孩子需要反派？】</h4>
+        <p>在經典的《年獸的故事》裡，年獸總是張牙舞爪。為什麼童書不總是畫可愛的小白兔就好？</p>
+        <p>心理學 <strong>布魯諾・貝特爾海姆 (Bruno Bettelheim)</strong> 在《童話的魅力》一書中曾提出：「孩子需要透過故事中的怪物，來投射內心的焦慮。」</p>
+        <ul>
+            <li><strong>具象化的恐懼：</strong> 孩子有很多說不出口的怕（怕黑、怕壞人、怕被遺棄）。「年獸」把這些無形的恐懼變成了一隻具體的怪獸。</li>
+            <li><strong>宣洩與掌控：</strong> 當孩子在故事結尾，看到年獸被鞭炮嚇跑時，他們內心的焦慮也跟著被釋放了。他們會覺得：「原來怪獸是可以被打敗的！」</li>
+        </ul>
+        
+        <div class="note-box">
+            <strong>📝 園長筆記：</strong>所以，不要害怕跟孩子講有點刺激的傳說故事。重點在於「陪伴」。當您抱著孩子讀年獸的故事，您的懷抱就是最安全的堡壘，這能讓孩子在安全感中練習勇敢。
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">歲時・繪本曆</h3>
+        <p><strong>【本週節氣：大寒】</strong><br>「大寒」，是一年裡最冷的時刻，也是「陰氣」最盛的時候。古人認為這時候必須要用「陽氣」來對抗寒冷，而紅色與火光就是最強的陽氣。</p>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-name">《鬥年獸》</h4>
+                <p class="card-meta">作者：劉嘉路 / 繪者：歐尼可夫 / 出版社：格林文化</p>
+            </div>
+            <p><strong>推薦理由：</strong>這類繪本通常色彩強烈，充滿了紅、金、黑的對比。畫風瀟灑，把年獸畫得有點調皮又不失威嚴。</p>
+            <p><strong>共讀亮點：</strong>「聲音的想像」，書裡有很多狀聲詞：劈哩啪啦、咚咚隆咚。請家長讀的時候誇張一點，甚至拍打大腿製造音效。大寒的寂靜，需要熱鬧的聲音來劃破。</p>
+            <p style="font-size: 14px; color: #888; margin-top: 10px;"><em>*亦可搭配《年獸來了》、《小年獸》等相關經典繪本共讀。</em></p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-name">《我以前好怕……》</h4>
+                <p class="card-meta">作繪者：蘿拉．維卡羅．希格 / 出版社：維京文化</p>
+            </div>
+            <p><strong>推薦理由：</strong>引導孩子轉換視角、將「恐懼」變為「好奇」的情緒成長繪本。從怕黑、怕蜘蛛到怕犯錯，作者用幽默正向的觀點，教會孩子只要換個想法，可怕的事物也能變成有趣的探索與學習機會。</p>
+            <p><strong>共讀亮點：</strong>家長可以利用書中的「影子遊戲」或「欣賞蜘蛛網」，陪伴孩子練習轉念的魔法，將生活中的驚嚇轉化為驚喜。透過討論犯錯與孤單的情境，鼓勵孩子說出心事，學習在睡不著的夜晚仰望星空，找到安定的力量。</p>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">實踐・玩教學</h3>
+        <h4 class="article-title">【紅色的魔法防護罩】</h4>
+        <p>我們把傳說變成好玩的感官遊戲。</p>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+            <div style="flex: 1; min-width: 250px; background: #fffaf9; padding: 20px; border-radius: 8px; border: 1px solid #fae3e3;">
+                <h4 style="color: #c05a50; margin-top: 0;">🏠 給家長的玩法</h4>
+                <strong>尋找紅色的保護色</strong>
+                <ul style="margin-top: 10px; padding-left: 15px;">
+                    <li><strong>情境：</strong>告訴孩子：「年獸最怕紅色了，我們來把家裡變成年獸不敢進來的地方！」</li>
+                    <li><strong>行動：</strong>和孩子一起剪幾張簡單的紅紙（不一定要複雜的窗花，剪圓形、方形都可以）。</li>
+                    <li><strong>佈置：</strong>貼在窗戶上、門把上，甚至是孩子的床頭。</li>
+                    <li><strong>意義：</strong>這不僅是裝飾，更是給孩子的一種心理暗示：這裡很安全，你可以安心睡覺。</li>
+                </ul>
+            </div>
+            
+            <div style="flex: 1; min-width: 250px; background: #fbfbfc; padding: 20px; border-radius: 8px; border: 1px solid #f2ece9;">
+                <h4 style="color: #6b635e; margin-top: 0;">🏫 給老師的教室靈感</h4>
+                <strong>空氣鞭炮</strong>
+                <ul style="margin-top: 10px; padding-left: 15px;">
+                    <li><strong>材料：</strong>泡泡紙。</li>
+                    <li><strong>活動：</strong>蒐集網購包裝用的泡泡紙，鋪在教室地板上。</li>
+                    <li><strong>儀式：</strong>喊一二三，讓孩子用力踩破泡泡紙，發出「波波波」的聲音。</li>
+                    <li><strong>連結：</strong>告訴孩子：「這就像放鞭炮一樣，把壞運氣都嚇跑囉！」這是一個非常舒壓且安全的感官活動。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">走讀・探新意</h3>
+        <div class="card" style="margin-bottom: 20px;">
+            <h4 class="card-name" style="font-size: 18px; border-bottom: none; margin-bottom: 10px;">🏮 感官炸裂的空間：傳統年貨大街/市場</h4>
+            <p>本週推薦的不是安靜的書店，而是熱鬧的「傳統市場」或「年貨大街」。這裡是最生動的繪本現場。</p>
+            <ul style="margin-bottom: 0;">
+                <li><strong>視覺：</strong>滿坑滿谷的紅色春聯、金色糖果紙。</li>
+                <li><strong>嗅覺：</strong>乾貨的鹹味、藥材的味道。</li>
+                <li><strong>任務：</strong>給孩子一個任務—「尋找 3 個紅色的東西」（例如：紅棗、紅龜粿、紅燈籠）。</li>
+            </ul>
+            <p style="margin-top: 10px; color: #c05a50; font-weight: bold;">讓孩子在真實生活中，體驗什麼叫做「年味」。</p>
+        </div>
+
+        <div class="card" style="margin-bottom: 0;">
+            <h4 class="card-name" style="font-size: 18px; border-bottom: none; margin-bottom: 10px;">📚 大稻埕裡的時光樹屋：郭怡美書店</h4>
+            <p style="margin-bottom: 0;">身在迪化街的百歲洋樓裡，郭怡美書店像是一座充滿檜木香氣的時光迷宮。獨特的「三進」長廊與透光天井，讓孩子在古色古香的木造樓梯間享受探險樂趣。大手牽小手窩在角落共讀，這裡是最適合感受老房子溫度的秘密基地。</p>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">園長的繪本練功坊</h3>
+        
+        <div style="margin-bottom: 25px;">
+            <h4 class="article-title" style="border-bottom: none; color: #6b635e;">🎧 The Illustration Department Podcast</h4>
+            <p>一個由 Giuseppe Castellano 主持的節目，是專為插畫師、創作者及藝術愛好者打造的深度對談節目。這個節目就像是一座專為藝術家開放的深夜工作室，在那裡，你不僅能看到大師調色盤上的秘密，更能聽見他們在創作靈魂深處的真誠對話。</p>
+        </div>
+
+        <div>
+            <h4 class="article-title" style="border-bottom: none; color: #6b635e;">🎧 Picture Book Summit</h4>
+            <p>歡迎收聽繪本高峰會播客，節目中將分享業內頂尖人士關於繪本創作、插畫和出版的真知灼見。每期節目都是往期繪本高峰會演講的節選，或是與團隊進行的圓桌討論。</p>
+        </div>
+    </section>
+    
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="index.html" style="text-decoration: none; color: #c05a50; font-weight: bold; border: 1px solid #c05a50; padding: 8px 20px; border-radius: 20px;">← 返回所有期數</a>
+    </div>
+</div>
+
+</body>
+</html>

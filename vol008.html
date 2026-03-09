@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>繪本森活・四季共讀 | Vol. 008 舌尖上的家鄉</title>
+    <style>
+        /* 基礎設定與字型匯入 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap');
+
+        body {
+            background-color: #fcfaf5; /* 暖炊米色背景 */
+            color: #4a4a4a;
+            font-family: 'Noto Sans TC', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            border-radius: 12px;
+            border-top: 6px solid #c46b5d; /* 柿子紅點綴 */
+        }
+
+        /* 刊頭設計 */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #f0e6d8;
+        }
+
+        .main-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #c46b5d; /* 柿子紅 */
+            letter-spacing: 2px;
+            margin: 0 0 15px 0;
+        }
+
+        .sub-title {
+            font-size: 20px;
+            color: #8c7a6b; /* 溫暖的褐灰色 */
+            margin: 0 0 20px 0;
+            font-weight: 500;
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: #888;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #fdfaf6;
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: inline-flex;
+            border: 1px solid #f0e6d8;
+        }
+
+        /* 標題與段落 */
+        h3.section-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 24px;
+            color: #c46b5d;
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            border-left: 4px solid #8c7a6b;
+            padding-left: 15px;
+        }
+
+        h4.article-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            margin: 0 0 15px 0;
+            background-color: #fcfaf5;
+            padding: 8px 15px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        p {
+            margin: 0 0 18px 0;
+            text-align: justify;
+        }
+
+        /* 特殊區塊設計 */
+        .note-box {
+            background-color: #fff9f7;
+            border: 1px solid #f7e3de;
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            position: relative;
+        }
+
+        .note-box::before {
+            content: "💡";
+            position: absolute;
+            top: 20px;
+            left: -15px;
+            font-size: 24px;
+        }
+
+        /* 繪本卡片設計 */
+        .book-card {
+            background-color: #fff;
+            border: 1px solid #f0e6d8;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .book-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(196, 107, 93, 0.08);
+        }
+
+        .book-header {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #f0e6d8;
+        }
+
+        .book-name {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 20px;
+            color: #c46b5d;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+        }
+
+        .book-author {
+            color: #777;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* 列表樣式 */
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #c46b5d;
+        }
+
+        /* 方法步驟設計 */
+        .method-step {
+            background: #fff;
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+
+        .method-step h5 {
+            margin: 0 0 10px 0;
+            color: #8c7a6b;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .method-step blockquote {
+            margin: 10px 0 0 0;
+            padding: 10px 15px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #ccc;
+            color: #555;
+            border-radius: 0 4px 4px 0;
+        }
+
+        /* 響應式微調 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+                margin: 0;
+                border-radius: 0;
+                border-top-width: 4px;
+            }
+            .meta-info {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+                border-radius: 8px;
+            }
+            .note-box::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 class="main-title">繪本森活・四季共讀</h1>
+        <h2 class="sub-title">Vol. 008：舌尖上的家鄉，用味道記住愛</h2>
+        <div class="meta-info">
+            <span>發刊日：2026年2月9日（團圓特刊）</span>
+            <span>主編：園長 蕭淑芬</span>
+        </div>
+    </header>
+
+    <section>
+        <h3 class="section-title">園長的書桌</h3>
+        <h4 class="article-title">【有一種味道，叫做「年味」】</h4>
+        <p>親愛的老師、爸爸媽媽們，新年快樂！</p>
+        <p>如果您正在讀這封信，或許您正塞在回家的路上，或者已經舒服地窩在舊沙發裡，手裡拿著一杯熱茶。</p>
+        <p>大年初一，是回家團聚的日子。對孩子來說，過年是什麼？是紅包？是新衣服？ 我覺得，過年是一種「味道」。</p>
+        <p>是阿嬤炸年糕的甜味，是餐桌上長年菜的苦甘味，甚至是空氣中殘留的鞭炮煙硝味。科學家說，嗅覺與味覺是大腦中保存記憶最久的地方。當我們老了，可能會忘記童年的很多事，但一聞到那股熟悉的滷肉香，眼淚可能就會掉下來。</p>
+        <p>本週的電子報，不想給各位任何壓力。我們只聊美食，聊聊那些藏在繪本裡的「好味道」。</p>
+    </section>
+
+    <section>
+        <h3 class="section-title">溯源・知繪本</h3>
+        <h4 class="article-title">【好吃的繪本：味覺意象】</h4>
+        <p>為什麼看著繪本裡的食物，孩子會忍不住吞口水？在兒童文學中，食物從來不只是食物，它象徵著「安全感」與「愛」。</p>
+        <ul>
+            <li><strong>野獸國的熱湯：</strong>麥克斯雖然當了野獸國王，最後還是為了「那碗還熱著的湯」回到了房間。那碗湯，代表媽媽的寬恕。</li>
+            <li><strong>好餓的毛毛蟲：</strong>牠吃穿了蘋果、梨子、蛋糕...這不只是吃，而是幼兒探索世界的貪婪與好奇。</li>
+        </ul>
+        
+        <div class="note-box">
+            <strong>📝 園長筆記：</strong>當您在過年期間陪孩子讀那些畫滿美食的書時，請運用「五感描述」。不要只說「他在吃餃子」，試著說：「哇，這個餃子看起來熱呼呼的，咬下去會有湯汁流出來喔！」這能刺激大腦的鏡像神經元，讓閱讀變成一場「大餐」。
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">歲時・繪本曆</h3>
+        <p><strong>【本週主題：團圓與幸運】</strong><br>過年必讀的繪本有很多，但如果只能選一本，我會推薦這一本華人原創經典。</p>
+
+        <div class="book-card">
+            <div class="book-header">
+                <h4 class="book-name">《團圓》</h4>
+                <p class="book-author">作者：余麗瓊 / 繪者：朱成梁</p>
+            </div>
+            <p><strong>推薦理由：</strong>這本書畫出了我們最熟悉的東方年味。故事裡的爸爸常年在在外工作，只有過年才回來。 書中把「包餃子」畫得極美。爸爸把一枚好運硬幣包進餃子裡，這是全家人愛的秘密。</p>
+            <p><strong>共讀亮點：</strong>「尋寶遊戲」。當讀到小女孩吃到那枚硬幣時，那是全書的高潮。請抱抱孩子，告訴他/她：「你就是我們家最棒的禮物，就像那枚幸運硬幣一樣。」這本書談的不只是吃，而是「相聚的珍貴」。</p>
+        </div>
+
+        <div class="book-card">
+            <div class="book-header">
+                <h4 class="book-name">《小年糕，過新年》</h4>
+                <p class="book-author">作、繪者：卷兒 / 出版社：維京國際股份有限公司</p>
+            </div>
+            <p><strong>推薦理由：</strong>兼具「食育」與「節慶習俗」的熱鬧繪本，透過擬人化的小年糕將演出中的「黏成一團」意外，巧妙轉化為團圓喜氣，幽默傳達出互助合作的精神。故事充滿年味與正向寓意，讓孩子在歡笑中認識傳統食物，非常適合在過年前夕建立儀式感。</p>
+            <p><strong>共讀亮點：</strong>書中藏有驚喜的「立體飛龍」跨頁，視覺效果震撼；文字則採用朗朗上口的韻文童謠，並附有專屬主題曲 QR Code。家長可以帶著孩子一邊聽歌唱跳，一邊欣賞紅通通的喜氣插畫，享受視覺與聽覺雙重滿足的「黏黏」親子時光。</p>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">實踐・玩教學</h3>
+        <h4 class="article-title">【小小廚房實習生】</h4>
+        <p>過年期間，廚房是最忙碌的戰場，也是最好的教室。別把孩子趕出去，讓他們進來幫忙！</p>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+            <div style="flex: 1; min-width: 250px; background: #fff9f7; padding: 20px; border-radius: 8px; border: 1px solid #f7e3de;">
+                <h4 style="color: #c46b5d; margin-top: 0;">👨‍🍳 給家長的玩法</h4>
+                <strong>傳家菜的祕密</strong>
+                <ul style="margin-top: 10px; padding-left: 15px;">
+                    <li><strong>任務：</strong>邀請孩子參與一道年菜的製作（即使只是剝豆子、洗菜都好）。</li>
+                    <li><strong>訪談：</strong>引導孩子去問阿公阿嬤：「這道菜為什麼要這樣煮？」、「阿嬤小時候過年吃什麼？」</li>
+                    <li><strong>紀錄：</strong>用手機拍下孩子和長輩一起做菜的畫面。這張照片，未來會是孩子珍貴的「味覺記憶」。</li>
+                </ul>
+            </div>
+            
+            <div style="flex: 1; min-width: 250px; background: #fdfaf6; padding: 20px; border-radius: 8px; border: 1px solid #f0e6d8;">
+                <h4 style="color: #8c7a6b; margin-top: 0;">🏫 給老師的開學暖身</h4>
+                <strong>年菜大調查</strong>
+                <p style="font-size: 14px; margin-bottom: 10px;">雖然現在還在放假，但老師可以先構思開學後的活動。</p>
+                <ul style="margin-top: 10px; padding-left: 15px;">
+                    <li><strong>主題：</strong>「我家最特別的年菜」。</li>
+                    <li><strong>任務：</strong>請孩子畫下過年期間印象最深的一道食物，開學後分享。這能幫助孩子練習回憶（Recall）與敘事（Narrative）。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">走讀・探新意</h3>
+        <h4 class="article-title">【餐桌，就是最美的圖書館】</h4>
+        <p>本週不去書店，我們留在餐桌上。過年的餐桌，往往堆滿了食物。建議您在茶几或餐桌的一角，清出一個小小的乾淨空間。</p>
+        <ul>
+            <li><strong>擺設：</strong>放上一盤橘子（大吉大利），旁邊放幾本關於食物的繪本（如《古利和古拉》、《媽媽，買綠豆》）。</li>
+            <li><strong>用意：</strong>當孩子吃飽了、累了，可以在這裡安靜地翻翻書，讓肚子和心靈都飽飽的。</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3 class="section-title">園長的繪本練功坊</h3>
+        <h4 class="article-title">【本週招式：把單向朗讀變雙向對話—PEER 法則】</h4>
+        <p>別只當廣播電台！讓孩子從「聽眾」變成「說書人」。</p>
+        <p>很多家長在共讀時有這樣的困擾：「孩子一直插嘴怎麼辦？」或是「我都唸完了，他好像沒聽懂。」 其實，共讀的最高境界是<strong>「對話式閱讀 (Dialogic Reading)」</strong>。 我們不要只是「唸給孩子聽」，而是要「跟孩子一起聊」。</p>
+        
+        <p>這次分享的是 <strong>PEER 法則</strong>。簡單的四步驟循環，像爬樓梯一樣，幫助孩子擴充詞彙量、練習說出完整的句子。</p>
+        
+        <div style="margin-bottom: 20px; padding: 15px; background-color: #f3ece4; border-radius: 6px; font-weight: bold; color: #555;">
+            🍎 拆解 PEER 四部曲：（假設繪本畫面上有一隻正在吃蘋果的毛毛蟲）
+        </div>
+
+        <div class="method-step">
+            <h5>1. P (Prompt) 提示發問</h5>
+            <p><strong>怎麼做：</strong>指著圖片問孩子，引誘他說話。</p>
+            <blockquote>家長說：「你看，這隻毛毛蟲在做什麼？」</blockquote>
+        </div>
+
+        <div class="method-step">
+            <h5>2. E (Evaluate) 評估回應</h5>
+            <p><strong>怎麼做：</strong>給予孩子的回應正向肯定。</p>
+            <blockquote>孩子說：「吃蘋果！」<br>家長說：「沒錯！你答對了！」（建立自信）</blockquote>
+        </div>
+
+        <div class="method-step">
+            <h5>3. E (Expand) 擴充語言</h5>
+            <p><strong>怎麼做：</strong>這是最關鍵的一步！ 在孩子的答案上「加料」，加入形容詞或動詞，把句子變長。</p>
+            <blockquote>家長說：「對，這是一隻綠色的毛毛蟲，正在大口大口地吃紅蘋果喔！」<br><small><em>（這就是鷹架作用，讓孩子學到新詞彙）</em></small></blockquote>
+        </div>
+
+        <div class="method-step">
+            <h5>4. R (Repeat) 重複驗收</h5>
+            <p><strong>怎麼做：</strong>請孩子重複一遍你剛剛擴充的句子。</p>
+            <blockquote>家長說：「你說說看，綠色的毛毛蟲在大口吃蘋果。」<br>孩子說：「綠色的毛毛蟲在大口吃蘋果。」<br><small><em>（內化學習）</em></small></blockquote>
+        </div>
+
+        <div class="note-box" style="border-left-color: #c46b5d;">
+            🎯 <strong>本週練習：</strong>共讀時，不要急著翻頁。挑選其中一頁孩子最喜歡的畫面，試試看用 <strong>PEER</strong> 這四個步驟，跟孩子來一場「有來有往」的對話吧！
+        </div>
+    </section>
+    
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="index.html" style="text-decoration: none; color: #8c7a6b; font-weight: bold; border: 1px solid #8c7a6b; padding: 8px 20px; border-radius: 20px;">← 返回所有期數</a>
+    </div>
+</div>
+
+</body>
+</html>

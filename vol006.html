@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>繪本森活・四季共讀 | Vol. 006 神獸出籠不用怕</title>
+    <style>
+        /* 基礎設定與字型匯入 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap');
+
+        body {
+            background-color: #f8f9fa; /* 雪白帶微灰的冷調背景 */
+            color: #4a4a4a;
+            font-family: 'Noto Sans TC', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            border-radius: 12px;
+            border-top: 6px solid #5b7b8c; /* 冬雪灰藍點綴 */
+        }
+
+        /* 刊頭設計 */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eef1f3;
+        }
+
+        .main-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #5b7b8c; /* 冬雪灰藍 */
+            letter-spacing: 2px;
+            margin: 0 0 15px 0;
+        }
+
+        .sub-title {
+            font-size: 20px;
+            color: #d4a373; /* 暖毯駝棕色 */
+            margin: 0 0 20px 0;
+            font-weight: 500;
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: #888;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #fdfcfb;
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: inline-flex;
+            border: 1px solid #eef1f3;
+        }
+
+        /* 標題與段落 */
+        h3.section-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 24px;
+            color: #5b7b8c;
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            border-left: 4px solid #d4a373;
+            padding-left: 15px;
+        }
+
+        h4.article-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            margin: 0 0 15px 0;
+            background-color: #f3f6f8;
+            padding: 8px 15px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        p {
+            margin: 0 0 18px 0;
+            text-align: justify;
+        }
+
+        /* 特殊區塊設計 */
+        .note-box {
+            background-color: #fafcfd;
+            border: 1px solid #e6ecef;
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            position: relative;
+        }
+
+        .note-box::before {
+            content: "💡";
+            position: absolute;
+            top: 20px;
+            left: -15px;
+            font-size: 24px;
+        }
+
+        /* 繪本卡片設計 */
+        .book-card {
+            background-color: #fff;
+            border: 1px solid #eef1f3;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .book-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(91, 123, 140, 0.08);
+        }
+
+        .book-header {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #eef1f3;
+        }
+
+        .book-name {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 20px;
+            color: #5b7b8c;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+        }
+
+        .book-author {
+            color: #777;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* 列表樣式 */
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #5b7b8c;
+        }
+
+        /* 響應式微調 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+                margin: 0;
+                border-radius: 0;
+                border-top-width: 4px;
+            }
+            .meta-info {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+                border-radius: 8px;
+            }
+            .note-box::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 class="main-title">繪本森活・四季共讀</h1>
+        <h2 class="sub-title">Vol. 006：神獸出籠不用怕！寒假防無聊的閱讀提案</h2>
+        <div class="meta-info">
+            <span>發刊日：2026年1月26日（寒假開始）</span>
+            <span>主編：園長 蕭淑芬</span>
+        </div>
+    </header>
+
+    <section>
+        <h3 class="section-title">園長的書桌</h3>
+        <h4 class="article-title">【最好的保母，是一本讀不完的書】</h4>
+        <p>親愛的老師、爸爸媽媽們，大家好：</p>
+        <p>恭喜大家，這學期圓滿結束了！(掌聲鼓勵 👏) 從今天開始，孩子們正式開啟「寒假模式」。我知道很多家長的心情是複雜的：既期待全家團聚，又擔心那句無限循環的咒語：「爸爸/媽媽，我好無聊，陪我玩—」</p>
+        <p>面對長假，除了電視和平板，我們還有更健康的選擇。有一種繪本，它不只要「讀」，更要「玩」。它沒有固定的故事線，卻藏著幾百個細節，能讓孩子趴在地板上，安安靜靜地看上半個小時（甚至更久！）。</p>
+        <p>這期電子報，我想開立一份「寒假閱讀提案」。讓我們用這些充滿魔力的「遊戲書」，換取孩子專注的眼神，以及大人片刻的寧靜時光。</p>
+    </section>
+
+    <section>
+        <h3 class="section-title">溯源・知繪本</h3>
+        <h4 class="article-title">【閱讀裡的遊戲性：為什麼孩子喜歡找找看？】</h4>
+        <p>您一定聽過《威利在哪裡？》(Where's Wally?)。為什麼這種密密麻麻、大人看了眼花的書，孩子卻樂此不疲？</p>
+        <p>這涉及到了閱讀心理學中的「遊戲性」。對於前識字期（還不太會認字）的幼兒來說，圖像就是他們的文字。</p>
+        <ul>
+            <li><strong>視覺辨識：</strong>孩子需要在複雜的背景中，分離出特定的形狀或顏色。這跟在草叢中找昆蟲的本能是一樣的。</li>
+            <li><strong>掌控感：</strong>在找找書的世界裡，孩子是偵探，他是主動的發現者，而不是被動的聽眾。</li>
+            <li><strong>心流體驗 (Flow)：</strong>當孩子專注於尋找一個小人兒時，他會進入一種忘記時間的「心流」狀態，這正是培養專注力的最佳途徑。</li>
+        </ul>
+        
+        <div class="note-box">
+            <strong>📝 園長筆記：</strong>不要覺得這類書籍「沒營養」或「沒故事」。「觀察」是所有科學與藝術的基礎。能看見細節的孩子，未來就能看見別人忽略的問題。
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">歲時・繪本曆</h3>
+        <p><strong>【本週主題：寒假與探索】</strong>既然放假了，我們就來一場紙上的垂直冒險。</p>
+
+        <div class="book-card">
+            <div class="book-header">
+                <h4 class="book-name">《100層樓的家》系列</h4>
+                <p class="book-author">作者：岩井俊雄</p>
+            </div>
+            <p><strong>推薦理由：</strong>這套書是台灣圖書館借閱率的常勝軍。它打破了傳統的左右翻頁，必須「由上往下」翻閱（或是由下往上）。每一層樓都住著不同的動物（老鼠、松鼠、青蛙...），每一層都有不同的生活細節。</p>
+            <p><strong>共讀亮點：</strong>不要只是一頁頁翻過去。請給孩子下任務：</p>
+            <ul>
+                <li><strong>找細節：</strong>「第 35 層樓的小瓢蟲在做什麼？」</li>
+                <li><strong>數數看：</strong>「我們來數數看，這一頁有幾個紅色的氣球？」</li>
+            </ul>
+            <p><em>*這本書讀完一次，至少需要 30 分鐘，CP 值極高！</em></p>
+        </div>
+
+        <div class="book-card">
+            <div class="book-header">
+                <h4 class="book-name">《臺北樂多多 Taipei Wimmelbook》系列</h4>
+                <p class="book-author">作者：Family L’Homme / 繪者：林芷伊 / 出版社：小鯨生活文創</p>
+            </div>
+            <p><strong>推薦理由：</strong>書中豐富隱藏的驚喜能讓孩子在「發現」的過程中獲得巨大成就感。其少字或無字的特性更打破了閱讀框架，鼓勵孩子發揮想像力看圖說故事，是互動性極高、且最耐讀的親子共讀首選。</p>
+            <p><strong>共讀亮點：</strong>以獨特的「直式翻頁」設計將書本化身為一座熱鬧的動物公寓，讓孩子享受層層探索的視覺驚喜。豐富細膩的圖像細節非常適合親子進行尋寶遊戲，在每一層樓挖掘出不同的生活故事，培養孩子的觀察力與想像力。</p>
+        </div>
+
+        <div class="book-card">
+            <div class="book-header">
+                <h4 class="book-name">《四季繪本+夏夜套書》系列</h4>
+                <p class="book-author">作者：羅陶蘇珊娜．伯納 / 譯者：溫小瑩 / 出版社：五南圖書</p>
+            </div>
+            <p><strong>推薦理由：</strong>由安徒生大獎得主創作的《四季繪本+夏夜》，被譽為「世界最美、最耐讀的找找書」。它不僅是一套視覺遊戲書，更是一部紙上的微型電影。全套五冊（春、夏、秋、冬、夏夜）不僅畫風優美溫暖，更展現了驚人的邏輯細節，從2歲到國小低年級都能在不同階段讀出不同的樂趣，是CP值極高的傳家繪本。</p>
+            <p><strong>共讀亮點：</strong>無字繪本打破了閱讀框架，讓親子能隨著季節更迭，追蹤小鎮人物的生活變化與隱藏的數十條故事線。這不僅能鍛鍊孩子的觀察力與邏輯思考，更能激發無限想像力，讓每次翻閱都成為一場全新的說故事探險。</p>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">實踐・玩教學</h3>
+        <h4 class="article-title">【打造居家秘密基地】</h4>
+        <p>有了好書，還需要一個好環境。寒假在家，我們來玩「蓋房子」。</p>
+        
+        <div style="background: #fdfaf6; padding: 25px; border-radius: 8px; border: 1px solid #f2e8de; margin-top: 15px;">
+            <h4 style="color: #d4a373; margin-top: 0; font-size: 18px;">⛺ 給家長的玩法：閱讀堡壘</h4>
+            <ul style="margin-top: 15px; padding-left: 20px;">
+                <li><strong>材料：</strong>幾張椅子、一條大被單（或床單）、幾個枕頭、夾子。</li>
+                <li><strong>行動：</strong>把被單蓋在椅背上，用夾子固定，創造一個像帳篷一樣的封閉空間。</li>
+                <li><strong>氣氛：</strong>在裡面放一個軟墊、一支手電筒（或露營燈），還有那本《100層樓的家》。</li>
+                <li><strong>規則：</strong>告訴孩子：「這是你的秘密基地，只有小朋友可以進去。」孩子對於狹小、隱蔽的空間有極大的安全感，他們會很樂意躲在裡面看書。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">走讀・探新意</h3>
+        <h4 class="article-title">【不用花錢的書店：圖書館預約】</h4>
+        <p>放假前，請務必跑一趟圖書館。 但這次我們不只是去逛，而是要教家長使用「預約系統」。</p>
+        <ul>
+            <li><strong>策略：</strong>寒假期間，熱門的繪本（如遊戲書、迷宮書）通常都會被借光。</li>
+            <li><strong>行動：</strong>現在就上圖書館網站，預約幾本適合寒假讀的書。</li>
+            <li><strong>推薦關鍵字：</strong>搜尋 「迷宮」、「找找」、「無字書」、「大圖鑑」。這些書通常又厚又重，借回家慢慢啃最划算。</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3 class="section-title">園長的繪本練功坊</h3>
+        <h4 class="article-title">【2026.2.3-8臺北國際書展】</h4>
+        <p>在人來人往的臺北國際書展，邀請您停下腳步，走進喜愛的攤位。因為繪本，不只是圖畫與文字的組合，更是大人通往孩子內心世界的秘密鑰匙。用聲音的溫度、翻頁的節奏，讓孩子眼神發光，愛上閱讀。無論您是新手爸媽，還是身經百戰的教育工作者，歡迎到書展逛逛，一起修煉這份溫柔的內功，把故事種進孩子的心田。</p>
+    </section>
+    
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="index.html" style="text-decoration: none; color: #5b7b8c; font-weight: bold; border: 1px solid #5b7b8c; padding: 8px 20px; border-radius: 20px;">← 返回所有期數</a>
+    </div>
+</div>
+
+</body>
+</html>
