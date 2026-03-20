@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>繪本森活・四季共讀 | Vol. 013 美感不是畫得像</title>
+    <style>
+        /* 基礎設定與字型匯入 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap');
+
+        body {
+            background-color: #f7f6f8; /* 帶有紫藤花氣息的極淺灰紫背景 */
+            color: #4a4a4a;
+            font-family: 'Noto Sans TC', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            border-radius: 12px;
+            border-top: 6px solid #8b819c; /* 藤花紫點綴 */
+        }
+
+        /* 刊頭設計 */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #efeef2;
+        }
+
+        .main-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #8b819c; /* 藤花紫 */
+            letter-spacing: 2px;
+            margin: 0 0 15px 0;
+        }
+
+        .sub-title {
+            font-size: 20px;
+            color: #c98a83; /* 春櫻粉 */
+            margin: 0 0 20px 0;
+            font-weight: 500;
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: #888;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #fbfafc;
+            padding: 10px 25px;
+            border-radius: 20px;
+            display: inline-flex;
+            border: 1px solid #efeef2;
+        }
+
+        /* 標題與段落 */
+        h3.section-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 24px;
+            color: #8b819c;
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            border-left: 4px solid #c98a83;
+            padding-left: 15px;
+        }
+
+        h4.article-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            margin: 0 0 15px 0;
+            background-color: #f7f6f8;
+            padding: 8px 15px;
+            border-radius: 4px;
+            display: inline-block;
+            border-bottom: 2px solid #efeef2;
+        }
+
+        p {
+            margin: 0 0 18px 0;
+            text-align: justify;
+        }
+
+        /* 特殊區塊設計 */
+        .note-box {
+            background-color: #fcfbfd;
+            border: 1px solid #e9e6ed;
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            position: relative;
+        }
+
+        .note-box::before {
+            content: "💡";
+            position: absolute;
+            top: 20px;
+            left: -15px;
+            font-size: 24px;
+        }
+
+        /* 繪本/資源卡片設計 */
+        .card {
+            background-color: #fff;
+            border: 1px solid #efeef2;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(139, 129, 156, 0.08);
+        }
+
+        .card-header {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #efeef2;
+        }
+
+        .card-name {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 20px;
+            color: #8b819c;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+        }
+
+        .card-meta {
+            color: #777;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* 列表樣式 */
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #8b819c;
+        }
+
+        /* 方法步驟設計 (心法) */
+        .method-step {
+            background: #fff;
+            border: 1px solid #efeef2;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+
+        .method-step h5 {
+            margin: 0 0 10px 0;
+            color: #c98a83;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        /* 響應式微調 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+                margin: 0;
+                border-radius: 0;
+                border-top-width: 4px;
+            }
+            .meta-info {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+                border-radius: 8px;
+            }
+            .note-box::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 class="main-title">繪本森活・四季共讀</h1>
+        <h2 class="sub-title">Vol. 013：美感不是畫得像，而是看見顏色的魔法</h2>
+        <div class="meta-info">
+            <span>發刊日：2026年3月16日（春分・色彩特輯）</span>
+            <span>主編：園長 蕭淑芬</span>
+        </div>
+    </header>
+
+    <section>
+        <h3 class="section-title">園長的書桌</h3>
+        <h4 class="article-title">【把春天穿在身上，把顏色種在心裡】</h4>
+        <p>親愛的老師、爸爸媽媽們，大家好：</p>
+        <p>最近走在路上，您有沒有發現世界的顏色變了？原本枯黃的樹枝冒出了嫩綠，路邊的野花開出了粉紅、鵝黃與淡紫。本週五就是「春分」，這是白天和晚上時間一樣長的日子，也是春天最濃烈的時候。</p>
+        <p>常有家長問：「我的孩子畫畫都在亂塗，天空畫成紅色的，草畫成藍色的，要不要送去學畫畫？」我總是說：「千萬不要急著糾正他！」</p>
+        <p>在孩子的眼裡，世界是流動的。美感教育，不是教孩子「怎麼畫才標準」，而是保留他們「大膽使用顏色」的勇氣。這個週末，讓我們拋開畫筆，直接用大自然的顏色來上一堂最美的美術課。</p>
+    </section>
+
+    <section>
+        <h3 class="section-title">溯源・知繪本</h3>
+        <h4 class="article-title">【色彩的魔術師：艾瑞・卡爾與赫威・托雷】</h4>
+        <p>在繪本的世界裡，有兩位大師把「顏色」玩到了極致。</p>
+        <ul>
+            <li>一位是大家熟悉的<strong>艾瑞・卡爾 (Eric Carle)</strong>（《好餓的毛毛蟲》作者）。他不用現成的色紙，而是自己用壓克力顏料塗刷出獨一無二的色紙，再進行拼貼。他的畫告訴孩子：「紅色不只有一種，有快樂的紅、生氣的紅、還有混合了橘色的紅。」</li>
+            <li>另一位是法國大師<strong>赫威・托雷 (Hervé Tullet)</strong>。他的書像玩具一樣。他告訴孩子：「顏色是活的！」藍色加黃色抱在一起會變成綠色。他打破了「書只能讀」的框架，讓閱讀變成了手指的舞動。</li>
+        </ul>
+        
+        <div class="note-box" style="border-left-color: #8b819c;">
+            <strong>📝 園長筆記：</strong>當孩子在塗鴉時，請試著欣賞他的「筆觸」和「混色」，而不是像不像。畢卡索曾說：「我花了一輩子，才學會像孩子一樣畫畫。」孩子的直覺，是大師都羨慕的天賦。
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">歲時・繪本曆</h3>
+        <p><strong>【本週節氣：春分】</strong>適合做一件讓世界變美麗的事。選一本經典好書，談談傳承與美。</p>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-name">《綠》</h4>
+                <p class="card-meta">作者：蘿拉・維卡羅・希格 (Laura Vaccaro Seeger)</p>
+            </div>
+            <p><strong>推薦理由：</strong>本書榮獲凱迪克銀牌獎，是色彩系列的首部曲。作者用壓克力顏料堆疊出厚實的肌理，將抽象的「綠」細分為樹林的綠、大海的綠、甚至是生氣時的綠。它完美契合春分的意境—在那一抹抹深淺不一的綠意中，我們看見了生命的萌發與自然的循環。</p>
+            <p><strong>共讀亮點：</strong>觀察書中神奇的「挖洞」工藝。上一頁海龜吐出的水泡，翻過來竟然變成了萊姆皮上的斑點。這種翻頁間的驚喜，能培養孩子觀察細節的能力，並理解萬物之間微妙的聯繫。</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-name">《blue》</h4>
+                <p class="card-meta">作者：蘿拉・維卡羅・希格 (Laura Vaccaro Seeger)</p>
+            </div>
+            <p><strong>推薦理由：</strong>延續《綠》的風格，這本書將焦點轉向情感的層次。從象徵憂傷的「憂鬱藍」到代表成長的「老舊藍」，故事隨著一個小男孩與他的小狗共同成長而展開。它談論的是時間的傳承，以及在變動的世界中，那份恆久不變的陪伴與溫暖。</p>
+            <p><strong>共讀亮點：</strong>留意書中人物的關係。《藍》裡成長的男孩，其實是《綠》結尾那個小女孩的爸爸。在共讀時，可以引導孩子尋找畫面中的小細節，感受跨越作品的生命延續與傳承之美。</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-name">《red》</h4>
+                <p class="card-meta">作者：蘿拉・維卡羅・希格 (Laura Vaccaro Seeger)</p>
+            </div>
+            <p><strong>推薦理由：</strong>三部曲的完結篇，也是最具情緒張力的一本。故事講述一隻迷路的小狐狸，在尋找家人的旅程中經歷了憤怒、恐懼、受傷與最終收穫的愛。紅色在這裡不只是色彩，更是心跳的聲音，是從迷失到重逢的力量。</p>
+            <p><strong>共讀亮點：</strong>本書的小女主角正是前作女孩長大後的樣子。共讀時可以與孩子討論：紅色什麼時候代表危險？什麼時候代表溫暖？透過色彩認識情緒，並看見人類與自然動物之間那份體貼與共存的「美」。</p>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">實踐・玩教學</h3>
+        <h4 class="article-title">【大自然的調色盤】</h4>
+        <p>不要只用顏料，我們也可以用花草和自然物來創作。</p>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+            <div style="flex: 1; min-width: 250px; background: #fdfafb; padding: 20px; border-radius: 8px; border: 1px solid #f2e3e1;">
+                <h4 style="color: #c98a83; margin-top: 0;">🌸 給家長的玩法：敲拓染</h4>
+                <ul style="margin-top: 10px; padding-left: 15px;">
+                    <li><strong>採集：</strong>去公園撿拾掉落的花瓣、葉子（盡量選顏色鮮豔、水分多的，如酢漿草）。</li>
+                    <li><strong>準備：</strong>一塊白布（或厚的水彩紙）、一把槌子（或光滑的石頭）。</li>
+                    <li><strong>行動：</strong>把花瓣夾在白布中間，用槌子輕輕敲打。</li>
+                    <li><strong>驚喜：</strong>打開白布，花瓣的汁液會把形狀和顏色原本印在布上。這就是最天然的畫作！</li>
+                </ul>
+            </div>
+            
+            <div style="flex: 1; min-width: 250px; background: #f9f8fa; padding: 20px; border-radius: 8px; border: 1px solid #e9e6ed;">
+                <h4 style="color: #8b819c; margin-top: 0;">🏫 給老師的教室靈感：尋找各式各樣的綠色</h4>
+                <ul style="margin-top: 10px; padding-left: 15px;">
+                    <li><strong>挑戰：</strong>給孩子一人一張色票（Paint Chips，去油漆行拿免費的樣品卡），上面有各種深淺不同的綠色。</li>
+                    <li><strong>任務：</strong>去校園找找看，這片葉子是「嫩綠色」？還是「墨綠色」？</li>
+                    <li><strong>意義：</strong>訓練孩子的視覺辨識度。讓他們發現，綠色不只是綠色，還有無限的層次。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">走讀・探新意</h3>
+        <div class="card" style="margin-bottom: 20px;">
+            <h4 class="card-name" style="font-size: 18px; border-bottom: none; margin-bottom: 10px;">🎨 與色彩對話：美術館的兒童室</h4>
+            <p>如果不去戶外，本週推薦帶孩子去「美術館」（如北美館兒藝中心、故宮兒藝中心）。</p>
+            <ul style="margin-bottom: 0;">
+                <li><strong>重點：</strong>不要試圖解釋艱深的藝術史。</li>
+                <li><strong>玩法：</strong>站在一幅抽象畫面前，問孩子：<br>
+                <span style="color: #777;">「你覺得這幅畫看起來是熱的還是冷的？」</span><br>
+                <span style="color: #777;">「如果這幅畫有聲音，會是什麼聲音？（打雷？流水？）」</span></li>
+            </ul>
+            <p style="margin-top: 10px; color: #c98a83; font-weight: bold;">這就是「聯覺(Synesthesia)」的練習，打通孩子的感官任督二脈。</p>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">園長的繪本練功坊</h3>
+        <p>這次我們藉由蘿拉・維卡羅・希格的「色彩三部曲」，來練習如何帶領孩子看見顏色的魔法：</p>
+        
+        <div class="method-step">
+            <h5>心法一：從「洞」看世界</h5>
+            <p>這系列最厲害的武器就是那精巧的「挖洞設計」。</p>
+            <ul>
+                <li><strong>帶讀建議：</strong>翻頁前，先別急著揭曉答案。指著那個小洞問問孩子：「你覺得這塊綠色是什麼？翻過去後，它會變成什麼？」</li>
+                <li><strong>練功重點：</strong>這種「預測」的過程，是在訓練孩子的空間感與想像力。這正是傳承美的第一步：讓孩子學會換個角度看世界，理解同一個事物在不同情境下，能有截然不同的面貌。</li>
+            </ul>
+        </div>
+
+        <div class="method-step">
+            <h5>心法二：解碼時間的色彩</h5>
+            <p>這三本書在角色上隱藏了動人的連結：從《綠》的小女孩，到《藍》裡出現她的父親，再到《紅》裡女孩長大救了小狐狸。</p>
+            <ul>
+                <li><strong>帶讀建議：</strong>將三本書一字排開。邀請孩子尋找那條隱形的線：「你有沒有發現，這本書裡的姐姐，好像在另一本書裡也出現過？」</li>
+                <li><strong>練功重點：</strong>這就是「傳承」的具象化。讓孩子明白，美與愛不是片段的，而是像色彩一樣會流動、會延續。上一代種下的「綠」，會成為下一代眼中的「藍」，最後化作守護生命的「紅」。</li>
+            </ul>
+        </div>
+
+        <div class="method-step">
+            <h5>心法三：動手做一件讓世界變美麗的事</h5>
+            <p>配合春分節氣，我們可以把練功坊延伸到書本之外。</p>
+            <ul>
+                <li><strong>延伸活動：</strong>準備一張厚紙卡，在中間剪出一個小圓洞。帶孩子到公園或校園，透過那個洞去尋找「大自然的色彩」。</li>
+                <li><strong>練功重點：</strong>當孩子透過洞口看見一片新葉、一朵花瓣，他們會重新定義什麼是「美麗」。這份對土地的感知力，就是我們能送給孩子最珍貴的傳承禮物。</li>
+            </ul>
+        </div>
+
+        <div class="note-box" style="background-color: #f7f6f8; border-color: #efeef2; margin-top: 30px;">
+            <h4 style="color: #8b819c; margin-top: 0; font-family: 'Noto Serif TC', serif;">【園長的話】</h4>
+            <p style="margin-bottom: 0;">「春分，是陽光平分、陰陽交接的平衡點。透過色彩三部曲，我們協助讓孩子理解的不是生硬的顏色名詞，而是在這個多彩的世界裡，如何擁有一雙發現美的眼睛，以及一顆願意傳承溫度的真心。」</p>
+        </div>
+    </section>
+    
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="index.html" style="text-decoration: none; color: #8b819c; font-weight: bold; border: 1px solid #8b819c; padding: 8px 20px; border-radius: 20px;">← 返回所有期數</a>
+    </div>
+</div>
+
+</body>
+</html>

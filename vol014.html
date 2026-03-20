@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>繪本森活・四季共讀 | Vol. 014 幽默感，是智慧的體現</title>
+    <style>
+        /* 基礎設定與字型匯入 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap');
+
+        body {
+            background-color: #fcfaf5; /* 帶有微暖陽光感的米白背景 */
+            color: #4a4a4a;
+            font-family: 'Noto Sans TC', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            border-radius: 12px;
+            border-top: 6px solid #de9c45; /* 暖蜜橘點綴 */
+        }
+
+        /* 刊頭設計 */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #f2eadf;
+        }
+
+        .main-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #de9c45; /* 暖蜜橘 */
+            letter-spacing: 2px;
+            margin: 0 0 15px 0;
+        }
+
+        .sub-title {
+            font-size: 20px;
+            color: #6b8e84; /* 薄荷灰綠 */
+            margin: 0 0 20px 0;
+            font-weight: 500;
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: #888;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #fdfaf5;
+            padding: 10px 25px;
+            border-radius: 20px;
+            display: inline-flex;
+            border: 1px solid #f2eadf;
+        }
+
+        /* 標題與段落 */
+        h3.section-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 24px;
+            color: #de9c45;
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            border-left: 4px solid #6b8e84;
+            padding-left: 15px;
+        }
+
+        h4.article-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            margin: 0 0 15px 0;
+            background-color: #fcfaf5;
+            padding: 8px 15px;
+            border-radius: 4px;
+            display: inline-block;
+            border-bottom: 2px solid #f2eadf;
+        }
+
+        p {
+            margin: 0 0 18px 0;
+            text-align: justify;
+        }
+
+        /* 特殊區塊設計 */
+        .note-box {
+            background-color: #fdf8f0;
+            border: 1px solid #f5e4ce;
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            position: relative;
+        }
+
+        .note-box::before {
+            content: "💡";
+            position: absolute;
+            top: 20px;
+            left: -15px;
+            font-size: 24px;
+        }
+
+        /* 繪本/資源卡片設計 */
+        .card {
+            background-color: #fff;
+            border: 1px solid #f2eadf;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(222, 156, 69, 0.08);
+        }
+
+        .card-header {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #f2eadf;
+        }
+
+        .card-name {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 20px;
+            color: #de9c45;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+        }
+
+        .card-meta {
+            color: #777;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* 列表樣式 */
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #de9c45;
+        }
+
+        /* 方法步驟設計 (心法) */
+        .method-step {
+            background: #fff;
+            border: 1px solid #f2eadf;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+
+        .method-step h5 {
+            margin: 0 0 10px 0;
+            color: #6b8e84;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        /* 響應式微調 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+                margin: 0;
+                border-radius: 0;
+                border-top-width: 4px;
+            }
+            .meta-info {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+                border-radius: 8px;
+            }
+            .note-box::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 class="main-title">繪本森活・四季共讀</h1>
+        <h2 class="sub-title">Vol. 014：幽默感，是智慧的體現</h2>
+        <div class="meta-info">
+            <span>發刊日：2026年3月23日（歡樂特輯）</span>
+            <span>主編：園長 蕭淑芬</span>
+        </div>
+    </header>
+
+    <section>
+        <h3 class="section-title">園長的書桌</h3>
+        <h4 class="article-title">【別太嚴肅，笑一個吧！】</h4>
+        <p>親愛的老師、爸爸媽媽們，大家好：</p>
+        <p>在幼兒園，我常聽到孩子講一些大人覺得「沒營養」的笑話（比如一直講「大便」、「屁股」），然後自己笑得東倒西歪。以前的家長可能會皺眉頭說：「沒規矩！」但我反而想恭喜您，這代表您的孩子擁有「幽默感」。</p>
+        <p>幽默感不是天生的，它是智力發展的高階指標。孩子必須先理解「正常的規則」，才能聽懂「打破規則」的好笑之處。這週，讓我們鬆開領帶，脫掉高跟鞋。面對孩子的惡作劇，與其生氣，不如給他一個大大的鬼臉。因為，懂得自嘲與歡笑的孩子，未來在面對挫折時，心裡會更有彈性。</p>
+    </section>
+
+    <section>
+        <h3 class="section-title">溯源・知繪本</h3>
+        <h4 class="article-title">【荒誕的藝術：無厘頭文學】</h4>
+        <p>為什麼繪本裡會有穿褲子的母雞？會有飛在天上的豬？ 這源自於兒童文學中的「無厘頭」(Nonsense)傳統，最著名的代表就是愛德華・利爾(Edward Lear)和蘇斯博士(Dr. Seuss)。</p>
+        <ul>
+            <li><strong>顛覆權威：</strong>孩子在現實生活中活在充滿「規矩」的世界（要排隊、要安靜）。無厘頭繪本提供了一個「安全閥」，讓他們在想像中打破這一切。</li>
+            <li><strong>語言遊戲：</strong>許多好笑的繪本玩的是「諧音梗」或「誇張法」。這能刺激孩子對語言的敏銳度。</li>
+        </ul>
+        
+        <div class="note-box" style="border-left-color: #de9c45;">
+            <strong>📝 園長筆記：</strong>當您讀到那些毫無邏輯、荒謬可笑的情節時，請不要急著問：「這本書在教什麼？」「快樂」本身就是最好的教育。讓孩子在閱讀中笑出眼淚，這本書就值得了。
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">歲時・繪本曆</h3>
+        <p><strong>【本週主題：愚人節的幽默】</strong><br>愚人節讀什麼？讀一本讓孩子笑到肚子痛，同時又發現「自然法則」的書。</p>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-name">《動物絕對不應該穿衣服》</h4>
+                <p class="card-meta">作者：茱蒂・巴瑞特 / 繪者：朗・巴瑞特</p>
+            </div>
+            <p><strong>推薦理由：</strong>這是一本幽默經典。書名就告訴你結論，但內容卻展示了「如果做了會怎樣」。如果豪豬穿衣服會怎樣？（刺破衣服）如果母雞穿褲子會怎樣？（生蛋會破掉）如果長頸鹿打領帶會怎樣？（脖子太長了，領帶好幾條）</p>
+            <p><strong>共讀亮點：</strong>「吐槽大會」。每一頁都是一個笑點。請和孩子一起扮演「糾察隊」，指著圖片大笑：「哈哈！你看這隻羊，牠穿毛衣熱昏倒了！」在笑聲中，孩子其實學會了每種動物的身體構造與生活習性。</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-name">《子兒，吐吐》</h4>
+                <p class="card-meta">作者：李瑾倫</p>
+            </div>
+            <p><strong>推薦理由：</strong>這是台灣原創繪本的經典。在春分這個「種子發芽」的時節，讀這本關於「吞下種子會長樹」的故事再適合不過。主角胖臉兒從擔心、期待到最後的釋懷，展現了孩子純真、樂觀且充滿韌性的生命哲學。</p>
+            <p><strong>共讀亮點：</strong>引導孩子觀察胖臉兒心境的變化。那句「長樹也沒什麼不好，大家可以在我頭下乘涼」的轉念，是我們能傳承給孩子最美、最幽默的人生智慧。</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-name">《全都鹿》</h4>
+                <p class="card-meta">作者：Q-rais / 出版社：上誼文化</p>
+            </div>
+            <p><strong>推薦理由：</strong>這是近期席捲繪本界的話題之作，榮獲「MOE 繪本屋大賞」。在萬物復甦的春分，世界本該多彩多姿，但這本書卻反其道而行，創造了一個「全是鹿」的超現實宇宙。這種荒謬、腦洞大開的幽默感，能瞬間擊中孩子的笑穴，讓閱讀變得像一場驚喜派對。</p>
+            <p><strong>共讀亮點：</strong>尋找畫面中的「諧音梗」與「細節陷阱」。書中無論是澡堂、電影院還是棒球場，全都塞滿了鹿，每一隻鹿的表情都一本正經卻做著怪事。建議和孩子比賽，看誰能先找到躲在角落那隻最奇怪的鹿！</p>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">實踐・玩教學</h3>
+        <h4 class="article-title">【生活中的小脫序】</h4>
+        <p>這週我們來玩一點「不一樣」的，打破日常的規律。</p>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+            <div style="flex: 1; min-width: 250px; background: #fdfaf5; padding: 20px; border-radius: 8px; border: 1px solid #f2eadf;">
+                <h4 style="color: #de9c45; margin-top: 0;">🙃 給家長的玩法：顛倒日</h4>
+                <ul style="margin-top: 10px; padding-left: 15px;">
+                    <li><strong>規則：</strong>選定這週末的一小時是「顛倒時間」。</li>
+                    <li><strong>行動：</strong>
+                        <ul>
+                            <li>衣服反著穿（標籤在外面）。</li>
+                            <li>晚餐「先吃水果，再吃正餐」。</li>
+                            <li>跟家人說話時，要在句尾加一個「呱」（或是像貓一樣喵喵叫）。</li>
+                        </ul>
+                    </li>
+                    <li><strong>效果：</strong>這種小小的脫序，會讓孩子覺得爸媽「變好玩了」，親子關係會瞬間升溫。</li>
+                </ul>
+            </div>
+            
+            <div style="flex: 1; min-width: 250px; background: #f7faf9; padding: 20px; border-radius: 8px; border: 1px solid #e1ebe7;">
+                <h4 style="color: #6b8e84; margin-top: 0;">🏫 給老師的教室靈感：滑稽自畫像</h4>
+                <ul style="margin-top: 10px; padding-left: 15px;">
+                    <li><strong>道具：</strong>鏡子、圖畫紙。</li>
+                    <li><strong>任務：</strong>請孩子對著鏡子做一個「最醜/最奇怪的鬼臉」（翻白眼、吐舌頭、拉耳朵）。</li>
+                    <li><strong>創作：</strong>把這個鬼臉畫下來。</li>
+                    <li><strong>展覽：</strong>把全班的鬼臉畫貼在牆上，讓大家猜猜這是誰。這能讓孩子學習放開拘束，展現自信。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">走讀・探新意</h3>
+        <div class="card" style="margin-bottom: 20px;">
+            <h4 class="card-name" style="font-size: 18px; border-bottom: none; margin-bottom: 10px;">🙃 腦洞大開的空間：顛倒屋 / 錯覺藝術展</h4>
+            <p>如果週末想出門，推薦尋找各地的「顛倒屋」展覽，或是科學博物館裡的「視錯覺」區。</p>
+            <ul style="margin-bottom: 0;">
+                <li><strong>體驗：</strong>站在天花板上拍照，或是看著螺旋圖案頭暈。</li>
+                <li><strong>對話：</strong>「眼見不一定為憑喔！」這跟愚人節的精神一樣—保持懷疑，保持好奇。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">園長的繪本練功坊</h3>
+        
+        <div class="method-step">
+            <h5>本週心法一：看見「想像力」的萌芽</h5>
+            <p>《子兒，吐吐》是關於生理的想像（頭上長樹）；《全都鹿》是關於世界的想像（全是鹿的宇宙）。春分是陽光平分之日，也是想像力最平衡、最活躍的時刻。</p>
+            <ul>
+                <li><strong>帶讀建議：</strong>讀完《子兒，吐吐》，可以真的和孩子一起種下一顆種子，體驗生命萌發的美麗。或是讀完《全都鹿》，可以跟孩子玩「如果全世界都變成了...」的造句遊戲（例如：全都貓、全都冰淇淋），練習用幽默感來翻轉世界。</li>
+                <li><strong>練功重點：</strong>所謂「傳承與美」，不只是嚴肅的藝術，更包含了一種「對生活的幽默感」。讓孩子在春分這天學會大笑，就是給予他們最美的生命養分。</li>
+            </ul>
+        </div>
+
+        <div class="note-box" style="background-color: #fdf8f0; border-color: #f5e4ce; margin-top: 30px;">
+            <h4 style="color: #de9c45; margin-top: 0; font-family: 'Noto Serif TC', serif;">【園長的話】</h4>
+            <p style="margin-bottom: 0;">「《子兒，吐吐》讓我們看見本土創作的溫暖根基；《全都鹿》帶我們領略國際創意的瘋狂趣味。這兩本書在春分交會，讓我們明白：只要保有幽默感，平凡的生活也能開出最美麗的花。」</p>
+        </div>
+    </section>
+    
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="index.html" style="text-decoration: none; color: #de9c45; font-weight: bold; border: 1px solid #de9c45; padding: 8px 20px; border-radius: 20px;">← 返回所有期數</a>
+    </div>
+</div>
+
+</body>
+</html>

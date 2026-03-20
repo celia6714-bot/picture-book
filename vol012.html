@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>繪本森活・四季共讀 | Vol. 012 蹲下來，你會發現另一個宇宙</title>
+    <style>
+        /* 基礎設定與字型匯入 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap');
+
+        body {
+            background-color: #f7f9f6; /* 帶有初春氣息的極淺綠背景 */
+            color: #4a4a4a;
+            font-family: 'Noto Sans TC', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            border-radius: 12px;
+            border-top: 6px solid #6d8c60; /* 春葉綠點綴 */
+        }
+
+        /* 刊頭設計 */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #edf0ea;
+        }
+
+        .main-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #6d8c60; /* 春葉綠 */
+            letter-spacing: 2px;
+            margin: 0 0 15px 0;
+        }
+
+        .sub-title {
+            font-size: 20px;
+            color: #a68a6d; /* 暖泥褐 */
+            margin: 0 0 20px 0;
+            font-weight: 500;
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: #888;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #fbfbfa;
+            padding: 10px 25px;
+            border-radius: 20px;
+            display: inline-flex;
+            border: 1px solid #edf0ea;
+        }
+
+        /* 標題與段落 */
+        h3.section-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 24px;
+            color: #6d8c60;
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            border-left: 4px solid #a68a6d;
+            padding-left: 15px;
+        }
+
+        h4.article-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            margin: 0 0 15px 0;
+            background-color: #f7f9f6;
+            padding: 8px 15px;
+            border-radius: 4px;
+            display: inline-block;
+            border-bottom: 2px solid #edf0ea;
+        }
+
+        p {
+            margin: 0 0 18px 0;
+            text-align: justify;
+        }
+
+        /* 特殊區塊設計 */
+        .note-box {
+            background-color: #fcfcf9;
+            border: 1px solid #eceae3;
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            position: relative;
+        }
+
+        .note-box::before {
+            content: "💡";
+            position: absolute;
+            top: 20px;
+            left: -15px;
+            font-size: 24px;
+        }
+
+        /* 繪本/資源卡片設計 */
+        .card {
+            background-color: #fff;
+            border: 1px solid #edf0ea;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(109, 140, 96, 0.08);
+        }
+
+        .card-header {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #edf0ea;
+        }
+
+        .card-name {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 20px;
+            color: #6d8c60;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+        }
+
+        .card-meta {
+            color: #777;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* 列表樣式 */
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li, ol li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #6d8c60;
+        }
+
+        /* 響應式微調 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+                margin: 0;
+                border-radius: 0;
+                border-top-width: 4px;
+            }
+            .meta-info {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+                border-radius: 8px;
+            }
+            .note-box::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 class="main-title">繪本森活・四季共讀</h1>
+        <h2 class="sub-title">Vol. 012：蹲下來，你會發現另一個宇宙</h2>
+        <div class="meta-info">
+            <span>發刊日：2026年3月9日（驚蟄）</span>
+            <span>主編：園長 蕭淑芬</span>
+        </div>
+    </header>
+
+    <section>
+        <h3 class="section-title">園長的書桌</h3>
+        <h4 class="article-title">【那是春天打了一個大噴嚏】</h4>
+        <p>親愛的老師、爸爸媽媽們，大家好：</p>
+        <p>這些天有沒有聽到轟隆隆的聲音？孩子問：「那是天空在生氣嗎？」我笑著說：「不是喔，是春天剛睡醒，打了一個大噴嚏，把睡覺的小蟲子都叫醒了。」這就是「驚蟄」。</p>
+        <p>在這個節氣，沉睡在土裡的生命—青蛙、螞蟻、毛毛蟲，通通都醒來了。我知道很多大人（包括我以前）看到蟲子的反應是尖叫。但對孩子來說，蟲子是他們最感興趣的「外星生物」。</p>
+        <p>本週，想邀請各位放下「好噁心」的成見，和孩子一起「蹲下來」。當視角降低到離地 10 公分，你會發現，那裡有一個忙碌又迷人的微觀宇宙。</p>
+    </section>
+
+    <section>
+        <h3 class="section-title">溯源・知繪本</h3>
+        <h4 class="article-title">【不只是故事：科普繪本與「驚奇之心」】</h4>
+        <p>繪本只能講童話嗎？其實有一大類繪本叫做「科學繪本」(Non-fiction Picture Books)。不同於讓動物穿衣服、說人話的虛構故事，這類繪本追求的是「真實的觀察」。</p>
+        <p>生態文學家 <strong>瑞秋・卡森 (Rachel Carson)</strong> 在《驚奇之心》一書中說過：</p>
+        <blockquote style="background-color: #f7f9f6; padding: 15px; border-left: 4px solid #6d8c60; color: #555; margin: 15px 0;">
+            「如果我能對仙女許願，我希望賦予每個孩子『驚奇之心』，這是對抗枯燥與幻滅的一帖良藥。」
+        </blockquote>
+        
+        <div class="note-box" style="border-left-color: #6d8c60;">
+            <strong>📝 園長筆記：</strong>好的科學繪本（特別是日本的「福音館」體系），不只要畫得像，更要畫出生命的「動態美」。它們教孩子的不只是知識（這是什麼蟲），而是態度（生命是如何運作的）。閱讀這類書籍，是培養孩子科學腦的第一步。
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">歲時・繪本曆</h3>
+        <p><strong>【本週節氣：驚蟄】</strong><br>最應景的主角，非「青蛙」莫屬。牠們從冬眠的泥土裡鑽出來，用叫聲宣告春天的到來。</p>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-name">《999隻青蛙兄弟》</h4>
+                <p class="card-meta">作者：木村研 / 繪者：村上康成</p>
+            </div>
+            <p><strong>推薦理由：</strong>這本書完美結合了「故事性」與「生態習性」。 春天來了，999 隻青蛙醒了，原本的小池塘擠不下了，牠們決定搬家。 雖然畫風可愛，但書中描繪的「弱肉強食」（遇到蛇、老鷹）卻是真實的自然法則。</p>
+            <p><strong>共讀亮點：</strong>「數數看」與「找找看」。 畫面上密密麻麻的青蛙，讓孩子找一找哪一隻表情不一樣？ 當青蛙遇到危險（被老鷹抓走）時，不用急著害怕，看看結局—青蛙怎麼用機智化險為夷？這是一場充滿歡笑的生態冒險。</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-name">《花婆婆》</h4>
+                <p class="card-meta">作、繪者：芭芭拉．庫尼</p>
+            </div>
+            <p><strong>推薦理由：</strong>跨越世代的經典必讀繪本。故事透過主角艾莉絲一生的追尋，溫柔地傳遞了三個重要的人生約定：去遠方旅行、住在海邊，以及最重要的—「做一件讓世界變得更美麗的事」。優雅細膩的畫風與詩意的文字，不僅啟發孩子對未來的憧憬，也能在大人心中種下溫暖的種子，是一本極具生命教育意義的雋永佳作。</p>
+            <p><strong>共讀亮點：</strong>共讀時，可以帶著孩子跟隨主角的腳步，觀察她如何隨著歲月成長，並一步步實現對爺爺的承諾。家長不妨藉此與孩子聊聊彼此的夢想，討論想去什麼樣的遠方探索；更能在故事尾聲，將書中的核心精神延伸至生活，與孩子一起發想並實踐屬於你們的「讓世界更美麗的行動」，無論是種下一盆植栽、主動幫助他人，還是愛護周遭環境，讓這份感動自然轉化為日常中最棒的親子互動。</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-name">《讓世界更美麗》</h4>
+                <p class="card-meta">作者：安琪拉．柏克．康克爾 / 繪者：貝卡．史泰蘭德</p>
+            </div>
+            <p><strong>推薦理由：</strong>這部優美的傳記繪本，帶我們走進經典名作《花婆婆》作者芭芭拉．庫尼的真實人生。她的一生宛如《花婆婆》的縮影，用畫筆、故事與實際行動，溫柔且堅定地實踐了「做一件讓世界變得更美麗的事」。這本書能激勵大人與孩子，相信自己也能用獨特的方式為世界增添美麗。</p>
+            <p><strong>共讀亮點：</strong>建議將此書與經典的《花婆婆》搭配共讀，引導孩子對照故事主角與作者的真實經歷，體會「故事源自生活」的感動。共讀時可帶著孩子欣賞芭芭拉從早期黑白創作到運用豐富色彩的蛻變歷程，從中討論持續練習與尋找自我的價值；更能在故事尾聲與孩子一起發想：「我們現在能做什麼小事，讓身邊的世界更美麗？」將閱讀的啟發化為生活中的實際行動。</p>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">實踐・玩教學</h3>
+        <h4 class="article-title">【微觀世界的探險家】</h4>
+        <p>這週的作業不在書桌上，請帶孩子去有泥土的地方。</p>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+            <div style="flex: 1; min-width: 250px; background: #fcfcf9; padding: 20px; border-radius: 8px; border: 1px solid #eceae3;">
+                <h4 style="color: #6d8c60; margin-top: 0;">🔍 給家長的玩法：放大鏡散步</h4>
+                <ul style="margin-top: 10px; padding-left: 15px;">
+                    <li><strong>裝備：</strong>一支放大鏡（如果沒有，用手機相機的微距模式也可以）。</li>
+                    <li><strong>規則：</strong>我們今天不看大樹，只看「比手指頭還小」的東西。</li>
+                    <li><strong>引導：</strong>「你看！螞蟻在搬東西，牠們要去哪裡？」、「這片葉子被誰咬了一口？」</li>
+                    <li><strong>心態：</strong>如果孩子發現了你害怕的蟲，請深呼吸，不要尖叫。試著說：「哇，你發現了媽媽不認識的朋友耶。」（大人的鎮定，能保護孩子的好奇心）。</li>
+                </ul>
+            </div>
+            
+            <div style="flex: 1; min-width: 250px; background: #fdfaf7; padding: 20px; border-radius: 8px; border: 1px solid #f2e9de;">
+                <h4 style="color: #a68a6d; margin-top: 0;">🏫 給老師的教室靈感：聽見春天的聲音</h4>
+                <ul style="margin-top: 10px; padding-left: 15px;">
+                    <li><strong>活動：</strong>帶孩子到校園草地閉上眼睛 1 分鐘。</li>
+                    <li><strong>任務：</strong>「張開耳朵抓聲音」。</li>
+                    <li><strong>記錄：</strong>回到教室後，在一張白紙中間畫個「我」，然後在四周畫下聽到的聲音（鳥叫、風聲、車聲）。</li>
+                    <li><strong>意義：</strong>驚蟄是「聲音」的節氣，這能訓練孩子的聽覺專注力。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">走讀・探新意</h3>
+        <div class="card" style="margin-bottom: 20px;">
+            <h4 class="card-name" style="font-size: 18px; border-bottom: none; margin-bottom: 10px;">🦋 城市裡的森林：昆蟲館 / 生態公園</h4>
+            <p>如果真的不敢在野外抓蟲，那就去「昆蟲館」或設有「蝴蝶園」的公園吧。</p>
+            <ul style="margin-bottom: 0;">
+                <li><strong>推薦視角：</strong>不要只看標本，去看「活體」。</li>
+                <li><strong>挑戰：</strong>找找看大自然裡的「偽裝大師」（例如：枯葉蝶、竹節蟲）。</li>
+            </ul>
+            <p style="margin-top: 10px; color: #a68a6d; font-weight: bold;">這能讓孩子理解：生物為了生存，演化出了多麼不可思議的魔法。</p>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="section-title">園長的繪本練功坊</h3>
+        
+        <div style="margin-bottom: 25px;">
+            <h4 class="article-title" style="border-bottom: none; color: #a68a6d;">🔖 【傑出科學圖畫書插畫家】</h4>
+            <p>這本書是我們提升「圖像閱讀力」的必備指南。鄭明進老師跳脫了科學繪本只看「知識正不正確」的框架，帶領我們從美學與視覺傳達的角度切入。書中詳細剖析了各國頂尖插畫家如何運用剖面圖、微觀視角，以及水彩、拼貼等多種媒材來呈現科學現象。讀完這本書，未來帶領孩子共讀時，我們的提問就能從單純的「這是什麼？」，昇華為引導孩子觀察「畫家是怎麼讓我們看見內部的？」。</p>
+        </div>
+
+        <div style="margin-bottom: 25px;">
+            <h4 class="article-title" style="border-bottom: none; color: #a68a6d;">🔖 【碧雅翠絲．波特：田園裡的科學家】</h4>
+            <p>大家都認識《小兔彼得》，但很少人知道作者碧雅翠絲．波特其實是一位充滿熱情的自然觀察家與真菌研究者。這本優美的傳記繪本，講述了她在那個女性處處受限的年代，如何憑藉著對大自然的熱愛，持續在田野間探索紀錄。這本書不僅展現了「科學腦」與「藝術心」的完美結合，更是與孩子探討勇氣、堅持與打破刻板印象的絕佳文本。</p>
+        </div>
+
+        <div>
+            <h4 class="article-title" style="border-bottom: none; color: #a68a6d;">🔖 【田園之春】</h4>
+            <p>如果要找尋最接地氣的在地生態資源，這套叢書絕對是無可取代的經典。它集結了台灣眾多優秀作家與插畫家，將本土的農作、動植物生態與鄉村文化，化為一本本精彩的圖畫書。這不僅是認識台灣土地的寶庫，更是我們未來設計在地特色課程與手作活動時，最豐富的靈感來源，能讓孩子真正與自己生長的環境產生深刻連結。</p>
+        </div>
+    </section>
+    
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="index.html" style="text-decoration: none; color: #6d8c60; font-weight: bold; border: 1px solid #6d8c60; padding: 8px 20px; border-radius: 20px;">← 返回所有期數</a>
+    </div>
+</div>
+
+</body>
+</html>
